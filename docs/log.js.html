@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>log.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AuthenticationContext.html">AuthenticationContext</a><ul class='methods'><li data-type='method'><a href="AuthenticationContext.html#_acquireToken">_acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireToken">acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithAuthorizationCode">acquireTokenWithAuthorizationCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCertificate">acquireTokenWithClientCertificate</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCredentials">acquireTokenWithClientCredentials</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithDeviceCode">acquireTokenWithDeviceCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithRefreshToken">acquireTokenWithRefreshToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithUsernamePassword">acquireTokenWithUsernamePassword</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireUserCode">acquireUserCode</a></li><li data-type='method'><a href="AuthenticationContext.html#cancelRequestToGetTokenWithDeviceCode">cancelRequestToGetTokenWithDeviceCode</a></li></ul></li><li><a href="AuthenticationParameters.html">AuthenticationParameters</a></li><li><a href="Authority.html">Authority</a><ul class='methods'><li data-type='method'><a href="Authority.html#_createInstanceDiscoveryEndpointFromTemplate">_createInstanceDiscoveryEndpointFromTemplate</a></li><li data-type='method'><a href="Authority.html#_getOAuthEndpoints">_getOAuthEndpoints</a></li><li data-type='method'><a href="Authority.html#_parseAuthority">_parseAuthority</a></li><li data-type='method'><a href="Authority.html#_performDynamicInstanceDiscovery">_performDynamicInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_performStaticInstanceDiscovery">_performStaticInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_validateAuthorityUrl">_validateAuthorityUrl</a></li><li data-type='method'><a href="Authority.html#_validateViaInstanceDiscovery">_validateViaInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#validate">validate</a></li></ul></li><li><a href="CacheDriver.html">CacheDriver</a><ul class='methods'><li data-type='method'><a href="CacheDriver.html#_acquireNewTokenFromMrrt">_acquireNewTokenFromMrrt</a></li><li data-type='method'><a href="CacheDriver.html#_addMany">_addMany</a></li><li data-type='method'><a href="CacheDriver.html#_createEntryFromRefresh">_createEntryFromRefresh</a></li><li data-type='method'><a href="CacheDriver.html#_entryHasMetadata">_entryHasMetadata</a></li><li data-type='method'><a href="CacheDriver.html#_find">_find</a></li><li data-type='method'><a href="CacheDriver.html#_findMRRTTokensForUser">_findMRRTTokensForUser</a></li><li data-type='method'><a href="CacheDriver.html#_getPotentialEntries">_getPotentialEntries</a></li><li data-type='method'><a href="CacheDriver.html#_loadSingleEntryFromCache">_loadSingleEntryFromCache</a></li><li data-type='method'><a href="CacheDriver.html#_refreshEntryIfNecessary">_refreshEntryIfNecessary</a></li><li data-type='method'><a href="CacheDriver.html#_refreshExpiredEntry">_refreshExpiredEntry</a></li><li data-type='method'><a href="CacheDriver.html#_removeMany">_removeMany</a></li><li data-type='method'><a href="CacheDriver.html#_updateRefreshTokens">_updateRefreshTokens</a></li><li data-type='method'><a href="CacheDriver.html#add">add</a></li><li data-type='method'><a href="CacheDriver.html#find">find</a></li><li data-type='method'><a href="CacheDriver.html#remove">remove</a></li></ul></li><li><a href="CodeRequest.html">CodeRequest</a><ul class='methods'><li data-type='method'><a href="CodeRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="CodeRequest.html#_getUserCodeInfo">_getUserCodeInfo</a></li><li data-type='method'><a href="CodeRequest.html#getUserCodeInfo">getUserCodeInfo</a></li></ul></li><li><a href="Logger.html">Logger</a><ul class='methods'><li data-type='method'><a href="Logger.html#createError">createError</a></li><li data-type='method'><a href="Logger.html#error">error</a></li><li data-type='method'><a href="Logger.html#info">info</a></li><li data-type='method'><a href="Logger.html#log">log</a></li><li data-type='method'><a href="Logger.html#verbose">verbose</a></li><li data-type='method'><a href="Logger.html#warn">warn</a></li></ul></li><li><a href="MemoryCache.html">MemoryCache</a><ul class='methods'><li data-type='method'><a href="MemoryCache.html#add">add</a></li><li data-type='method'><a href="MemoryCache.html#find">find</a></li><li data-type='method'><a href="MemoryCache.html#remove">remove</a></li></ul></li><li><a href="Mex.html">Mex</a><ul class='methods'><li data-type='method'><a href="Mex.html#_checkPolicy">_checkPolicy</a></li><li data-type='method'><a href="Mex.html#_checkSoapActionAndTransport">_checkSoapActionAndTransport</a></li><li data-type='method'><a href="Mex.html#_getMatchingBindings">_getMatchingBindings</a></li><li data-type='method'><a href="Mex.html#_getPortsForPolicyBindings">_getPortsForPolicyBindings</a></li><li data-type='method'><a href="Mex.html#_parse">_parse</a></li><li data-type='method'><a href="Mex.html#_selectSingleMatchingPolicy">_selectSingleMatchingPolicy</a></li><li data-type='method'><a href="Mex.html#_selectUsernamePasswordPolicies">_selectUsernamePasswordPolicies</a></li><li data-type='method'><a href="Mex.html#_urlIsSecure">_urlIsSecure</a></li><li data-type='method'><a href="Mex.html#discover">discover</a></li></ul></li><li><a href="OAuth2Client.html">OAuth2Client</a><ul class='methods'><li data-type='method'><a href="OAuth2Client.html#_crackJwt">_crackJwt</a></li><li data-type='method'><a href="OAuth2Client.html#_createDeviceCodeUrl">_createDeviceCodeUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_createTokenUrl">_createTokenUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_extractIdTokenValues">_extractIdTokenValues</a></li><li data-type='method'><a href="OAuth2Client.html#_getUserId">_getUserId</a></li><li data-type='method'><a href="OAuth2Client.html#_handleGetTokenResponse">_handleGetTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingRequestErrorResponse">_handlePollingRequestErrorResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingResponse">_handlePollingResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_parseIdToken">_parseIdToken</a></li><li data-type='method'><a href="OAuth2Client.html#_parseOptionalInts">_parseOptionalInts</a></li><li data-type='method'><a href="OAuth2Client.html#_validateDeviceCodeResponse">_validateDeviceCodeResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_validateTokenResponse">_validateTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#cancelPollingRequest">cancelPollingRequest</a></li><li data-type='method'><a href="OAuth2Client.html#getToken">getToken</a></li><li data-type='method'><a href="OAuth2Client.html#getTokenWithPolling">getTokenWithPolling</a></li></ul></li><li><a href="TokenCache.html">TokenCache</a></li><li><a href="TokenRequest.html">TokenRequest</a><ul class='methods'><li data-type='method'><a href="TokenRequest.html#_addTokenIntoCache">_addTokenIntoCache</a></li><li data-type='method'><a href="TokenRequest.html#_createADWSTrustEndpointError">_createADWSTrustEndpointError</a></li><li data-type='method'><a href="TokenRequest.html#_createJwt">_createJwt</a></li><li data-type='method'><a href="TokenRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="TokenRequest.html#_getSamlGrantType">_getSamlGrantType</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordFederated">_getTokenUsernamePasswordFederated</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordManaged">_getTokenUsernamePasswordManaged</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithRefreshToken">_getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithTokenResponse">_getTokenWithTokenResponse</a></li><li data-type='method'><a href="TokenRequest.html#_parseWStrustVersionFromFederationActiveAuthUrl">_parseWStrustVersionFromFederationActiveAuthUrl</a></li><li data-type='method'><a href="TokenRequest.html#_performUsernamePasswordForAccessTokenExchange">_performUsernamePasswordForAccessTokenExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustAssertionOAuthExchange">_performWSTrustAssertionOAuthExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustExchange">_performWSTrustExchange</a></li><li data-type='method'><a href="TokenRequest.html#getTokenFromCacheWithRefresh">getTokenFromCacheWithRefresh</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithAuthorizationCode">getTokenWithAuthorizationCode</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithCertificate">getTokenWithCertificate</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithClientCredentials">getTokenWithClientCredentials</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithRefreshToken">getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithUsernamePassword">getTokenWithUsernamePassword</a></li></ul></li><li><a href="UserRealm.html">UserRealm</a><ul class='methods'><li data-type='method'><a href="UserRealm.html#_getUserRealmUrl">_getUserRealmUrl</a></li><li data-type='method'><a href="UserRealm.html#_logParsedResponse">_logParsedResponse</a></li><li data-type='method'><a href="UserRealm.html#_parseDiscoveryResponse">_parseDiscoveryResponse</a></li><li data-type='method'><a href="UserRealm.html#_validateAccountType">_validateAccountType</a></li><li data-type='method'><a href="UserRealm.html#_validateConstantValue">_validateConstantValue</a></li><li data-type='method'><a href="UserRealm.html#_validateFederationProtocol">_validateFederationProtocol</a></li><li data-type='method'><a href="UserRealm.html#discover">discover</a></li></ul></li><li><a href="WSTrustRequest.html">WSTrustRequest</a><ul class='methods'><li data-type='method'><a href="WSTrustRequest.html#._datePlusMinutes">_datePlusMinutes</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildRST">_buildRST</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildSecurityHeader">_buildSecurityHeader</a></li><li data-type='method'><a href="WSTrustRequest.html#_handleRSTR">_handleRSTR</a></li><li data-type='method'><a href="WSTrustRequest.html#_populatedEscapedPassword">_populatedEscapedPassword</a></li><li data-type='method'><a href="WSTrustRequest.html#_populateRSTUsernamePassword">_populateRSTUsernamePassword</a></li><li data-type='method'><a href="WSTrustRequest.html#acquireToken">acquireToken</a></li></ul></li><li><a href="WSTrustResponse.html">WSTrustResponse</a><ul class='methods'><li data-type='method'><a href="WSTrustResponse.html#_parseError">_parseError</a></li><li data-type='method'><a href="WSTrustResponse.html#_parseToken">_parseToken</a></li><li data-type='method'><a href="WSTrustResponse.html#parse">parse</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Logging.html">Logging</a><ul class='methods'><li data-type='method'><a href="Logging.html#.getLoggingOptions">getLoggingOptions</a></li><li data-type='method'><a href="Logging.html#.setLoggingOptions">setLoggingOptions</a></li></ul></li><li><a href="Util.html">Util</a><ul class='methods'><li data-type='method'><a href="Util.html#.copyUrl">copyUrl</a></li><li data-type='method'><a href="Util.html#.createRequestHandler">createRequestHandler</a></li><li data-type='method'><a href="Util.html#.createRequestOptions">createRequestOptions</a></li><li data-type='method'><a href="Util.html#.isHttpSuccess">isHttpSuccess</a></li></ul></li><li><a href="XmlUtil.html">XmlUtil</a><ul class='methods'><li data-type='method'><a href="XmlUtil.html#.expandQNames">expandQNames</a></li><li data-type='method'><a href="XmlUtil.html#.findElementText">findElementText</a></li><li data-type='method'><a href="XmlUtil.html#.isElementNode">isElementNode</a></li><li data-type='method'><a href="XmlUtil.html#.serializeNodeChildren">serializeNodeChildren</a></li><li data-type='method'><a href="XmlUtil.html#.xpathSelect">xpathSelect</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addParameterIfAvailable">_addParameterIfAvailable</a></li><li><a href="global.html#createAuthenticationContext">createAuthenticationContext</a></li><li><a href="global.html#createAuthenticationParametersFromHeader">createAuthenticationParametersFromHeader</a></li><li><a href="global.html#createAuthenticationParametersFromResponse">createAuthenticationParametersFromResponse</a></li><li><a href="global.html#createAuthenticationParametersFromUrl">createAuthenticationParametersFromUrl</a></li><li><a href="global.html#createLogContext">createLogContext</a></li><li><a href="global.html#dateGetTimeInSeconds">dateGetTimeInSeconds</a></li><li><a href="global.html#scrubRSTRLogMessage">scrubRSTRLogMessage</a></li><li><a href="global.html#SelfSignedJwt">SelfSignedJwt</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">log.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * @copyright
+ * Copyright © Microsoft Open Technologies, Inc.
+ *
+ * All Rights Reserved
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http: *www.apache.org/licenses/LICENSE-2.0
+ *
+ * THIS CODE IS PROVIDED *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ * ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A
+ * PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.
+ *
+ * See the Apache License, Version 2.0 for the specific language
+ * governing permissions and limitations under the License.
+ */
+'use strict';
+
+var _ = require('underscore');
+var uuid = require('node-uuid');  // want to replace with this in the future: https://gist.github.com/jed/982883
+
+
+
+var LEVEL_STRING_MAP = {
+  0 : 'ERROR:',
+  1 : 'WARNING:',
+  2 : 'INFO:',
+  3 : 'VERBOSE:'
+};
+
+/**
+ * Methods for controling global logging options for ADAL
+ * @namespace
+ */
+var Logging = {
+
+  /**
+   * @callback LoggingCallback
+   * @memberOf Logging
+   * @param {Logging.LOGGING_LEVEL} level The level of this log entry.
+   * @param {string} message The text content of the log entry.
+   * @param {Error}  [error] An Error object if this is an {@link Logging.LOGGING_LEVEL.ERROR|ERROR} level log entry.
+   */
+
+  /**
+   * @typedef LoggingOptions
+   * @memberOf Logging
+   * @property {LoggingCallback} [log] The function to call when ADAL generates a log entry.
+   * @property {Logging.LOGGING_LEVEL} [level] The maximum level of log entries to generate.
+   */
+
+  /**
+   * Describes the available logging levels.
+   * @enum
+   * @type {Number}
+   */
+  LOGGING_LEVEL : {
+    ERROR    : 0,
+    WARN     : 1,
+    INFO     : 2,
+    VERBOSE  : 3
+  },
+
+  /**
+   * Sets global logging options for ADAL.
+   * @param {LoggingOptions} options
+   */
+  setLoggingOptions : function(options) {
+    if (!options) {
+      options = {};
+    }
+
+    if (options.log) {
+      if (!_.isFunction(options.log)) {
+        throw new Error('setLogOptions expects the log key in the options parameter to be a function');
+      }
+    } else {
+      // if no log function was passed set it to a default no op function.
+      options.log = function() {};
+    }
+
+    if (options.level) {
+      var level = options.level;
+      if (level &lt; 0 || level > 3) {
+        throw new Error('setLogOptions expects the level key to be in the range 0 to 3 inclusive');
+      }
+    } else {
+      options.level = this.LOGGING_LEVEL.ERROR;
+    }
+
+    this.LogOptions = options;
+  },
+
+  /**
+   * Get's the current global logging options.
+   * @return {LoggingOptions}
+   */
+  getLoggingOptions : function() {
+    return this.LogOptions;
+  },
+
+  /**
+   * Stores the current global logging options.
+   * @private
+   * @type {LoggingOptions}
+   */
+  LogOptions : {
+    log : function() {},
+    level : 0,
+  }
+};
+
+/**
+ * An internal logging object.
+ * @class
+ * @private
+ * @param {string} componentName The name of the component that created this instance.  This name will be
+ *                               prepended to the beginning of all log entries generated by this instance.
+ */
+function Logger(componentName, logContext) {
+  if (!logContext) {
+    throw new Error('Logger: logContext is a required parameter');
+  }
+  this._componentName = componentName;
+  this._logContext = logContext;
+}
+
+Object.defineProperty(Logger.prototype, 'context', {
+  get: function () {
+    return this._logContext;
+  }
+});
+
+/**
+ * Generates a log entry
+ * @param  {Logging.LOGGING_LEVEL} level The level of this log entry
+ * @param  {string|function} message A message string, or a function that returns a message string, to log.
+ * @param  {Error} [error] If this is a {@link Logging.LOGGING_LEVEL.ERROR|ERROR} level log entry then the caller
+ *                       should pass an error object in this parameter.
+ */
+Logger.prototype.log = function(level, message, error) {
+  if (level &lt;= Logging.LogOptions.level) {
+    if (_.isFunction(message)) {
+      message = message();
+    }
+
+    var correlationId = this._logContext.correlationId || '&lt;no correlation id>';
+    var timeStamp = new Date().toUTCString();
+
+    var formattedMessage = timeStamp + ':' + correlationId + ' - ' + this._componentName + ': ' + LEVEL_STRING_MAP[level] + ' ' + message;
+    if (error) {
+      formattedMessage += '\nStack:\n' + error.stack;
+    }
+    Logging.LogOptions.log(level, formattedMessage, error);
+  }
+};
+
+/**
+ * Generate an {@link Logging.LOGGING_LEVEL.ERROR|ERROR} level log entry.
+ * @param  {string} message A message to log
+ * @param  {Error} error The Error object associated with this log entry
+ */
+Logger.prototype.error = function(message, error) {
+  this.log(Logging.LOGGING_LEVEL.ERROR, message, error);
+};
+
+/**
+ * Generate an {@link Logging.LOGGING_LEVEL.WARN|WARN} level log entry.
+ * @param  {string} message A message to log
+ */
+Logger.prototype.warn = function(message) {
+  this.log(Logging.LOGGING_LEVEL.WARN, message, null);
+};
+
+/**
+ * Generate an {@link Logging.LOGGING_LEVEL.INFO|INFO} level log entry.
+ * @param  {string} message A message to log
+ */
+Logger.prototype.info = function(message) {
+  this.log(Logging.LOGGING_LEVEL.INFO, message, null);
+};
+
+/**
+ * Generate an {@link Logging.LOGGING_LEVEL.VERBOSE|VERBOSE} level log entry.
+ * @param  {string} message A message to log
+ */
+Logger.prototype.verbose = function(message) {
+  this.log(Logging.LOGGING_LEVEL.VERBOSE, message, null);
+};
+
+/**
+ * Generate a {@link Logging.LOGGING_LEVEL.ERROR|ERROR} level log entry, as well as an
+ * Error object to go with it.  This is a convenience method for throwing logged errors.
+ * @param  {string} message A message to log
+ */
+Logger.prototype.createError = function(message) {
+  var err = new Error(message);
+  this.error(message, err);
+  return err;
+};
+
+/**
+ * Creates a new log context based on the correlationId passed in.  If no correlationId is passed in
+ * then one is generated, by the function uuid.v4()
+ * @private
+ */
+function createLogContext(correlationId) {
+  var id = correlationId || uuid.v4();
+  return { correlationId : id };
+}
+
+var exports = {
+  Logging : Logging,
+  Logger : Logger,
+  createLogContext : createLogContext
+};
+
+module.exports = exports;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Wed Sep 28 2016 13:28:10 GMT-0700 (PDT) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

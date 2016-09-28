@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>mex.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AuthenticationContext.html">AuthenticationContext</a><ul class='methods'><li data-type='method'><a href="AuthenticationContext.html#_acquireToken">_acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireToken">acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithAuthorizationCode">acquireTokenWithAuthorizationCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCertificate">acquireTokenWithClientCertificate</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCredentials">acquireTokenWithClientCredentials</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithDeviceCode">acquireTokenWithDeviceCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithRefreshToken">acquireTokenWithRefreshToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithUsernamePassword">acquireTokenWithUsernamePassword</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireUserCode">acquireUserCode</a></li><li data-type='method'><a href="AuthenticationContext.html#cancelRequestToGetTokenWithDeviceCode">cancelRequestToGetTokenWithDeviceCode</a></li></ul></li><li><a href="AuthenticationParameters.html">AuthenticationParameters</a></li><li><a href="Authority.html">Authority</a><ul class='methods'><li data-type='method'><a href="Authority.html#_createInstanceDiscoveryEndpointFromTemplate">_createInstanceDiscoveryEndpointFromTemplate</a></li><li data-type='method'><a href="Authority.html#_getOAuthEndpoints">_getOAuthEndpoints</a></li><li data-type='method'><a href="Authority.html#_parseAuthority">_parseAuthority</a></li><li data-type='method'><a href="Authority.html#_performDynamicInstanceDiscovery">_performDynamicInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_performStaticInstanceDiscovery">_performStaticInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_validateAuthorityUrl">_validateAuthorityUrl</a></li><li data-type='method'><a href="Authority.html#_validateViaInstanceDiscovery">_validateViaInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#validate">validate</a></li></ul></li><li><a href="CacheDriver.html">CacheDriver</a><ul class='methods'><li data-type='method'><a href="CacheDriver.html#_acquireNewTokenFromMrrt">_acquireNewTokenFromMrrt</a></li><li data-type='method'><a href="CacheDriver.html#_addMany">_addMany</a></li><li data-type='method'><a href="CacheDriver.html#_createEntryFromRefresh">_createEntryFromRefresh</a></li><li data-type='method'><a href="CacheDriver.html#_entryHasMetadata">_entryHasMetadata</a></li><li data-type='method'><a href="CacheDriver.html#_find">_find</a></li><li data-type='method'><a href="CacheDriver.html#_findMRRTTokensForUser">_findMRRTTokensForUser</a></li><li data-type='method'><a href="CacheDriver.html#_getPotentialEntries">_getPotentialEntries</a></li><li data-type='method'><a href="CacheDriver.html#_loadSingleEntryFromCache">_loadSingleEntryFromCache</a></li><li data-type='method'><a href="CacheDriver.html#_refreshEntryIfNecessary">_refreshEntryIfNecessary</a></li><li data-type='method'><a href="CacheDriver.html#_refreshExpiredEntry">_refreshExpiredEntry</a></li><li data-type='method'><a href="CacheDriver.html#_removeMany">_removeMany</a></li><li data-type='method'><a href="CacheDriver.html#_updateRefreshTokens">_updateRefreshTokens</a></li><li data-type='method'><a href="CacheDriver.html#add">add</a></li><li data-type='method'><a href="CacheDriver.html#find">find</a></li><li data-type='method'><a href="CacheDriver.html#remove">remove</a></li></ul></li><li><a href="CodeRequest.html">CodeRequest</a><ul class='methods'><li data-type='method'><a href="CodeRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="CodeRequest.html#_getUserCodeInfo">_getUserCodeInfo</a></li><li data-type='method'><a href="CodeRequest.html#getUserCodeInfo">getUserCodeInfo</a></li></ul></li><li><a href="Logger.html">Logger</a><ul class='methods'><li data-type='method'><a href="Logger.html#createError">createError</a></li><li data-type='method'><a href="Logger.html#error">error</a></li><li data-type='method'><a href="Logger.html#info">info</a></li><li data-type='method'><a href="Logger.html#log">log</a></li><li data-type='method'><a href="Logger.html#verbose">verbose</a></li><li data-type='method'><a href="Logger.html#warn">warn</a></li></ul></li><li><a href="MemoryCache.html">MemoryCache</a><ul class='methods'><li data-type='method'><a href="MemoryCache.html#add">add</a></li><li data-type='method'><a href="MemoryCache.html#find">find</a></li><li data-type='method'><a href="MemoryCache.html#remove">remove</a></li></ul></li><li><a href="Mex.html">Mex</a><ul class='methods'><li data-type='method'><a href="Mex.html#_checkPolicy">_checkPolicy</a></li><li data-type='method'><a href="Mex.html#_checkSoapActionAndTransport">_checkSoapActionAndTransport</a></li><li data-type='method'><a href="Mex.html#_getMatchingBindings">_getMatchingBindings</a></li><li data-type='method'><a href="Mex.html#_getPortsForPolicyBindings">_getPortsForPolicyBindings</a></li><li data-type='method'><a href="Mex.html#_parse">_parse</a></li><li data-type='method'><a href="Mex.html#_selectSingleMatchingPolicy">_selectSingleMatchingPolicy</a></li><li data-type='method'><a href="Mex.html#_selectUsernamePasswordPolicies">_selectUsernamePasswordPolicies</a></li><li data-type='method'><a href="Mex.html#_urlIsSecure">_urlIsSecure</a></li><li data-type='method'><a href="Mex.html#discover">discover</a></li></ul></li><li><a href="OAuth2Client.html">OAuth2Client</a><ul class='methods'><li data-type='method'><a href="OAuth2Client.html#_crackJwt">_crackJwt</a></li><li data-type='method'><a href="OAuth2Client.html#_createDeviceCodeUrl">_createDeviceCodeUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_createTokenUrl">_createTokenUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_extractIdTokenValues">_extractIdTokenValues</a></li><li data-type='method'><a href="OAuth2Client.html#_getUserId">_getUserId</a></li><li data-type='method'><a href="OAuth2Client.html#_handleGetTokenResponse">_handleGetTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingRequestErrorResponse">_handlePollingRequestErrorResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingResponse">_handlePollingResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_parseIdToken">_parseIdToken</a></li><li data-type='method'><a href="OAuth2Client.html#_parseOptionalInts">_parseOptionalInts</a></li><li data-type='method'><a href="OAuth2Client.html#_validateDeviceCodeResponse">_validateDeviceCodeResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_validateTokenResponse">_validateTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#cancelPollingRequest">cancelPollingRequest</a></li><li data-type='method'><a href="OAuth2Client.html#getToken">getToken</a></li><li data-type='method'><a href="OAuth2Client.html#getTokenWithPolling">getTokenWithPolling</a></li></ul></li><li><a href="TokenCache.html">TokenCache</a></li><li><a href="TokenRequest.html">TokenRequest</a><ul class='methods'><li data-type='method'><a href="TokenRequest.html#_addTokenIntoCache">_addTokenIntoCache</a></li><li data-type='method'><a href="TokenRequest.html#_createADWSTrustEndpointError">_createADWSTrustEndpointError</a></li><li data-type='method'><a href="TokenRequest.html#_createJwt">_createJwt</a></li><li data-type='method'><a href="TokenRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="TokenRequest.html#_getSamlGrantType">_getSamlGrantType</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordFederated">_getTokenUsernamePasswordFederated</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordManaged">_getTokenUsernamePasswordManaged</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithRefreshToken">_getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithTokenResponse">_getTokenWithTokenResponse</a></li><li data-type='method'><a href="TokenRequest.html#_parseWStrustVersionFromFederationActiveAuthUrl">_parseWStrustVersionFromFederationActiveAuthUrl</a></li><li data-type='method'><a href="TokenRequest.html#_performUsernamePasswordForAccessTokenExchange">_performUsernamePasswordForAccessTokenExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustAssertionOAuthExchange">_performWSTrustAssertionOAuthExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustExchange">_performWSTrustExchange</a></li><li data-type='method'><a href="TokenRequest.html#getTokenFromCacheWithRefresh">getTokenFromCacheWithRefresh</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithAuthorizationCode">getTokenWithAuthorizationCode</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithCertificate">getTokenWithCertificate</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithClientCredentials">getTokenWithClientCredentials</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithRefreshToken">getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithUsernamePassword">getTokenWithUsernamePassword</a></li></ul></li><li><a href="UserRealm.html">UserRealm</a><ul class='methods'><li data-type='method'><a href="UserRealm.html#_getUserRealmUrl">_getUserRealmUrl</a></li><li data-type='method'><a href="UserRealm.html#_logParsedResponse">_logParsedResponse</a></li><li data-type='method'><a href="UserRealm.html#_parseDiscoveryResponse">_parseDiscoveryResponse</a></li><li data-type='method'><a href="UserRealm.html#_validateAccountType">_validateAccountType</a></li><li data-type='method'><a href="UserRealm.html#_validateConstantValue">_validateConstantValue</a></li><li data-type='method'><a href="UserRealm.html#_validateFederationProtocol">_validateFederationProtocol</a></li><li data-type='method'><a href="UserRealm.html#discover">discover</a></li></ul></li><li><a href="WSTrustRequest.html">WSTrustRequest</a><ul class='methods'><li data-type='method'><a href="WSTrustRequest.html#._datePlusMinutes">_datePlusMinutes</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildRST">_buildRST</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildSecurityHeader">_buildSecurityHeader</a></li><li data-type='method'><a href="WSTrustRequest.html#_handleRSTR">_handleRSTR</a></li><li data-type='method'><a href="WSTrustRequest.html#_populatedEscapedPassword">_populatedEscapedPassword</a></li><li data-type='method'><a href="WSTrustRequest.html#_populateRSTUsernamePassword">_populateRSTUsernamePassword</a></li><li data-type='method'><a href="WSTrustRequest.html#acquireToken">acquireToken</a></li></ul></li><li><a href="WSTrustResponse.html">WSTrustResponse</a><ul class='methods'><li data-type='method'><a href="WSTrustResponse.html#_parseError">_parseError</a></li><li data-type='method'><a href="WSTrustResponse.html#_parseToken">_parseToken</a></li><li data-type='method'><a href="WSTrustResponse.html#parse">parse</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Logging.html">Logging</a><ul class='methods'><li data-type='method'><a href="Logging.html#.getLoggingOptions">getLoggingOptions</a></li><li data-type='method'><a href="Logging.html#.setLoggingOptions">setLoggingOptions</a></li></ul></li><li><a href="Util.html">Util</a><ul class='methods'><li data-type='method'><a href="Util.html#.copyUrl">copyUrl</a></li><li data-type='method'><a href="Util.html#.createRequestHandler">createRequestHandler</a></li><li data-type='method'><a href="Util.html#.createRequestOptions">createRequestOptions</a></li><li data-type='method'><a href="Util.html#.isHttpSuccess">isHttpSuccess</a></li></ul></li><li><a href="XmlUtil.html">XmlUtil</a><ul class='methods'><li data-type='method'><a href="XmlUtil.html#.expandQNames">expandQNames</a></li><li data-type='method'><a href="XmlUtil.html#.findElementText">findElementText</a></li><li data-type='method'><a href="XmlUtil.html#.isElementNode">isElementNode</a></li><li data-type='method'><a href="XmlUtil.html#.serializeNodeChildren">serializeNodeChildren</a></li><li data-type='method'><a href="XmlUtil.html#.xpathSelect">xpathSelect</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addParameterIfAvailable">_addParameterIfAvailable</a></li><li><a href="global.html#createAuthenticationContext">createAuthenticationContext</a></li><li><a href="global.html#createAuthenticationParametersFromHeader">createAuthenticationParametersFromHeader</a></li><li><a href="global.html#createAuthenticationParametersFromResponse">createAuthenticationParametersFromResponse</a></li><li><a href="global.html#createAuthenticationParametersFromUrl">createAuthenticationParametersFromUrl</a></li><li><a href="global.html#createLogContext">createLogContext</a></li><li><a href="global.html#dateGetTimeInSeconds">dateGetTimeInSeconds</a></li><li><a href="global.html#scrubRSTRLogMessage">scrubRSTRLogMessage</a></li><li><a href="global.html#SelfSignedJwt">SelfSignedJwt</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">mex.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * @copyright
+ * Copyright © Microsoft Open Technologies, Inc.
+ *
+ * All Rights Reserved
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http: *www.apache.org/licenses/LICENSE-2.0
+ *
+ * THIS CODE IS PROVIDED *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ * ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A
+ * PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.
+ *
+ * See the Apache License, Version 2.0 for the specific language
+ * governing permissions and limitations under the License.
+ */
+'use strict';
+var request = require('request');
+var url = require('url');
+var DOMParser = require('xmldom').DOMParser;
+var _ = require('underscore');
+var Logger = require('./log').Logger;
+var util = require('./util');
+
+var xmlutil = require('./xmlutil');
+var select = xmlutil.xpathSelect;
+
+var Namespaces = require('./constants').XmlNamespaces;
+
+var WSTrustVersion = require('./constants').WSTrustVersion;
+
+/**
+ * Create a new Mex object.
+ * @private
+ * @constructor
+ * @param {object} callContext Contains any context information that applies to the request.
+ * @param {string} url  The url of the mex endpoint.
+ */
+function Mex(callContext, url) {
+  this._log = new Logger('MEX', callContext._logContext);
+  this._callContext = callContext;
+  this._url = url;
+  this._dom = null;
+  this._mexDoc = null;
+  this._usernamePasswordPolicy = {};
+  this._log.verbose('Mex created with url: ' + url);
+}
+
+/**
+* Returns the policy containing IDP url and wstrust version from which a username passwowrd can be exchanged for a token.
+* @instance
+* @memberOf Mex
+* @name usernamePasswordPolicy
+*/
+Object.defineProperty(Mex.prototype, 'usernamePasswordPolicy', {
+  get: function() {
+    return this._usernamePasswordPolicy;
+  }
+});
+
+/**
+* @callback DiscoverCallback
+* @memberOf Mex
+* @param {object} error
+*/
+
+/**
+* Performs Mex discovery.  This method will retrieve the mex document, parse it, and extract
+* the username password ws-trust endpoint.
+* @private
+* @param {Mex.DiscoverCallback}  callback  Called when discover is complete.
+*/
+Mex.prototype.discover = function (callback) {
+  this._log.verbose('Retrieving mex at: ' + this._url);
+  var self = this;
+  var options = util.createRequestOptions(self, { headers : { 'Content-Type' : 'application/soap+xml'} });
+  request.get(this._url, options, util.createRequestHandler('Mex Get', this._log, callback,
+    function(response, body) {
+      try {
+        self._mexDoc = body;
+        var options = {
+          errorHandler : self._log.error
+        };
+        self._dom = new DOMParser(options).parseFromString(self._mexDoc);
+        self._parse(callback);
+        return;
+      } catch (err) {
+        self._log.error('Failed to parse mex response in to DOM', err);
+        callback(err);
+      }
+    })
+  );
+};
+
+var TRANSPORT_BINDING_XPATH = 'wsp:ExactlyOne/wsp:All/sp:TransportBinding';
+var TRANSPORT_BINDING_2005_XPATH = 'wsp:ExactlyOne/wsp:All/sp2005:TransportBinding';
+/**
+* Checks a DOM policy node that is a potentialy appplicable username password policy
+* to ensure that it has the correct transport.
+* @private
+* @param {object} policyNode  The policy node to check.
+* @returns {string} If the policy matches the desired transport then the id of the policy is returned.
+*                   If not then null is returned.
+*/
+Mex.prototype._checkPolicy = function(policyNode) {
+  var policyId = null;
+  var id = policyNode.getAttributeNS(Namespaces.wsu, 'Id');
+  var transportBindingNodes = select(policyNode, TRANSPORT_BINDING_XPATH);
+  if (0 === transportBindingNodes.length) {
+    transportBindingNodes = select(policyNode, TRANSPORT_BINDING_2005_XPATH);
+  }
+  if (0 !== transportBindingNodes.length) {
+    if (id) {
+      policyId = id;
+    }
+  }
+  if (policyId) {
+    this._log.verbose('found matching policy id: ' + policyId);
+  } else {
+    if (!id) {
+      id = '&lt;no id>';
+    }
+    this._log.verbose('potential policy did not match required transport binding: ' + id);
+  }
+  return policyId;
+};
+
+/**
+* Finds all username password policies within the mex document.
+* @private
+* @param xpath The xpath expression for selecting username token nodes. 
+* @returns {object} A map object that contains objects containing the id of username password polices.
+*/
+Mex.prototype._selectUsernamePasswordPolicies = function(xpath) {
+  var policies = {};
+  var usernameTokenNodes = select(this._dom, xpath);
+  if (!usernameTokenNodes.length) {
+    this._log.warn('no username token policy nodes found');
+    return;
+  }
+  for (var i=0; i &lt; usernameTokenNodes.length; i++) {
+    var policyNode = usernameTokenNodes[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode;
+    var id = this._checkPolicy(policyNode);
+    if (id) {
+      var idRef = '#' + id;
+      policies[idRef] = { id : idRef };
+    }
+  }
+  return _.isEmpty(policies) ? null : policies;
+};
+
+var SOAP_ACTION_XPATH = 'wsdl:operation/soap12:operation/@soapAction';
+var RST_SOAP_ACTION_13 = 'http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue';
+var RST_SOAP_ACTION_2005 = 'http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue';
+var SOAP_TRANSPORT_XPATH = 'soap12:binding/@transport';
+var SOAP_HTTP_TRANSPORT_VALUE = 'http://schemas.xmlsoap.org/soap/http';
+/**
+* Given a DOM binding node determines whether it matches the correct soap action and transport.
+* @private
+* @param {object} bindingNode   The DOM node to check.
+* @returns {bool}
+*/
+Mex.prototype._checkSoapActionAndTransport = function(bindingNode) {
+  var soapTransportAttributes;
+  var soapAction;
+  var soapTransport;
+  var bindingName = bindingNode.getAttribute('name');
+  var soapActionAttributes = select(bindingNode, SOAP_ACTION_XPATH);
+  if (soapActionAttributes.length) {
+    soapAction = soapActionAttributes[0].value;
+    soapTransportAttributes = select(bindingNode, SOAP_TRANSPORT_XPATH);
+  }
+  if (soapTransportAttributes.length) {
+    soapTransport = soapTransportAttributes[0].value;
+  }
+
+  if (soapTransport === SOAP_HTTP_TRANSPORT_VALUE) {
+    if (soapAction === RST_SOAP_ACTION_13) {
+      this._log.verbose('foud binding matching Action and Transport: ' + bindingName);
+      return WSTrustVersion.WSTRUST13;
+    }
+    else if (soapAction === RST_SOAP_ACTION_2005) {
+      this._log.verbose('found binding matching Action and Transport: ' + bindingName);
+      return WSTrustVersion.WSTRUST2005;
+    }
+  }
+
+  this._log.verbose('binding node did not match soap Action or Transport: ' + bindingName);
+  return WSTrustVersion.UNDEFINED;
+};
+
+/**
+* Given a map with policy id keys, finds the bindings in the mex document that are linked to thos policies.
+* @private
+* @param {object}   policies  A map with policy id keys.
+* @returns {object} a map of bindings id's to policy id's.
+*/
+Mex.prototype._getMatchingBindings = function(policies) {
+  var bindings = {};
+  var bindingPolicyRefNodes = select(this._dom, '//wsdl:definitions/wsdl:binding/wsp:PolicyReference');
+  for (var i=0; i &lt; bindingPolicyRefNodes.length; i++) {
+    var node = bindingPolicyRefNodes[i];
+    var uri = node.getAttribute('URI');
+    var policy = policies[uri];
+    if (policy) {
+      var bindingNode = node.parentNode;
+      var bindingName = bindingNode.getAttribute('name');
+      var version = this._checkSoapActionAndTransport(bindingNode);
+      if (version !== WSTrustVersion.UNDEFINED) {
+         var bindingPolicy = {};
+         bindingPolicy.url = uri;
+         bindingPolicy.version = version;
+
+         bindings[bindingName] = bindingPolicy;
+      }
+    }
+  }
+  return _.isEmpty(bindings) ? null : bindings;
+};
+
+/**
+* Ensures that a url points to an SSL endpoint.
+* @private
+* @param {string} endpointUrl   The url to check.
+* @returns {bool}
+*/
+Mex.prototype._urlIsSecure = function(endpointUrl) {
+  var parsedUrl = url.parse(endpointUrl);
+  return parsedUrl.protocol === 'https:';
+};
+
+var PORT_XPATH = '//wsdl:definitions/wsdl:service/wsdl:port';
+var ADDRESS_XPATH = 'wsa10:EndpointReference/wsa10:Address';
+/**
+* Finds all of the wsdl ports in the mex document that are associated with username password policies.  Augments
+* the passed in bindings with the endpoint url of the correct port.
+* @private
+* @param {object} bindings  A map of binding id's to policy id's.
+*/
+Mex.prototype._getPortsForPolicyBindings = function(bindings, policies) {
+  var portNodes = select(this._dom, PORT_XPATH);
+  if (0 === portNodes.length) {
+    this._log.warning('no ports found');
+  }
+  for (var i=0; i &lt; portNodes.length; i++) {
+    var portNode = portNodes[i];
+    var bindingId = portNode.getAttribute('binding');
+
+    // Clear any prefix
+    var bindingIdParts = bindingId.split(':');
+    bindingId = bindingIdParts[bindingIdParts.length - 1];
+
+    var trustPolicy = bindings[bindingId];
+    if (trustPolicy) {
+      var bindingPolicy = policies[trustPolicy.url];
+
+      if (bindingPolicy &amp;&amp; !bindingPolicy.url) {
+        bindingPolicy.version = trustPolicy.version;
+        var addressNode = select(portNode, ADDRESS_XPATH);
+        if (0 === addressNode) {
+          throw this._log.createError('no address nodes on port.');
+        }
+        var address = xmlutil.findElementText(addressNode[0]);
+        if (this._urlIsSecure(address)) {
+          bindingPolicy.url = address;
+        } else {
+          this._log.warn('skipping insecure endpoint: ' + address);
+        }
+      }
+    }
+  }
+};
+
+/**
+* Given a list of username password policies chooses one of them at random as the policy chosen by this Mex instance.
+* @private
+* @param {object} policies  A map of policy id's to an object containing username password ws-trust endpoint addresses.
+*/
+Mex.prototype._selectSingleMatchingPolicy = function(policies) {
+  // if both wstrust13 and wstrust2005 policy exists, then choose wstrust13, otherwise choose whatever exists.
+  var matchingPolicies = _.filter(policies, function(policy) { return policy.url ? true : false; });
+  if (!matchingPolicies) {
+    this._log.warn('no policies found with an url');
+    return;
+  }
+
+  var wstrust13Policy = null, wstrust2005Policy = null;
+  for(var i = 0; i &lt; matchingPolicies.length; ++i) {
+    var matchingPolicy = matchingPolicies[i];
+    if (WSTrustVersion.WSTRUST13 === matchingPolicy.version) {
+      wstrust13Policy = matchingPolicy;
+    }
+    else if (WSTrustVersion.WSTRUST2005 === matchingPolicy.version) {
+      wstrust2005Policy = matchingPolicy;
+    }
+  }
+
+  if (!wstrust13Policy &amp;&amp; !wstrust2005Policy) {
+    this._log.warn('no policies found with an url');
+    this._usernamePasswordPolicy = null;
+    return;
+  }
+
+  this._usernamePasswordPolicy = wstrust13Policy ? wstrust13Policy : wstrust2005Policy;
+};
+
+/**
+* Parses the mex document previously retrieved.
+* @private
+* @param {Mex.DiscoverCallback} callback
+*/
+Mex.prototype._parse = function(callback) {
+  var self = this;
+  var xpathExpression = '//wsdl:definitions/wsp:Policy/wsp:ExactlyOne/wsp:All/sp:SignedEncryptedSupportingTokens/wsp:Policy/sp:UsernameToken/wsp:Policy/sp:WssUsernameToken10'; 
+  var policies = self._selectUsernamePasswordPolicies(xpathExpression);
+
+  xpathExpression = '//wsdl:definitions/wsp:Policy/wsp:ExactlyOne/wsp:All/sp2005:SignedSupportingTokens/wsp:Policy/sp2005:UsernameToken/wsp:Policy/sp2005:WssUsernameToken10';
+
+  if (policies) {
+    _.extend(policies, self._selectUsernamePasswordPolicies(xpathExpression));
+  }
+  else {
+    policies = self._selectUsernamePasswordPolicies(xpathExpression);
+  }
+
+  if (!policies) {
+    callback(self._log.createError('No matching policies'));
+    return;
+  }
+  var bindings = self._getMatchingBindings(policies);
+  if (!bindings) {
+    callback(self._log.createError('No matching bindings'));
+    return;
+  }
+  self._getPortsForPolicyBindings(bindings, policies);
+  self._selectSingleMatchingPolicy(policies);
+  var err = this._url ? undefined : this._log.createError('No ws-trust endpoints match requirements.');
+  callback(err);
+};
+
+module.exports = Mex;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Wed Sep 28 2016 13:28:10 GMT-0700 (PDT) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

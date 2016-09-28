@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: xmlutil.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: xmlutil.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * @copyright
+ * Copyright © Microsoft Open Technologies, Inc.
+ *
+ * All Rights Reserved
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http: *www.apache.org/licenses/LICENSE-2.0
+ *
+ * THIS CODE IS PROVIDED *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ * ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A
+ * PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.
+ *
+ * See the Apache License, Version 2.0 for the specific language
+ * governing permissions and limitations under the License.
+ */
+'use strict';
+
+var _ = require('underscore');
+var select = require('xpath.js');
+var XMLSerializer = require('xmldom').XMLSerializer;
+
+var constants = require('./constants');
+
+/**
+ * @namespace XmlUtil
+ * @private
+ */
+
+var XPATH_PATH_TEMPLATE = '*[local-name() = \'LOCAL_NAME\' and namespace-uri() = \'NAMESPACE\']';
+/**
+* The xpath implementation being used does not have a way of matching expanded namespace.
+* This method takes an xpath query and expands all of the namespaces involved.  It then
+* re-writes the query in to a longer form that directory matches the correct namespaces.
+* @private
+* @static
+* @memberOf XmlUtil
+* @param {string} xpath   The expath query string to expand.
+* @returns {string} An expanded xpath query.
+*/
+function expandQNames(xpath) {
+  var namespaces = constants.XmlNamespaces;
+  var pathParts = xpath.split('/');
+  for (var i=0; i &lt; pathParts.length; i++) {
+    if (pathParts[i].indexOf(':') !== -1) {
+      var QNameParts = pathParts[i].split(':');
+      if (QNameParts.length !== 2) {
+        throw new Error('Unable to parse XPath string : ' + xpath + ' : with QName : ' + pathParts[i]);
+      }
+      var expandedPath = XPATH_PATH_TEMPLATE.replace('LOCAL_NAME', QNameParts[1]);
+      expandedPath = expandedPath.replace('NAMESPACE', namespaces[QNameParts[0]]);
+      pathParts[i] = expandedPath;
+    }
+  }
+  return pathParts.join('/');
+}
+
+var exports = {
+
+  /**
+   * Performs an xpath select that does appropriate namespace matching since the imported
+   * xpath module does not properly handle namespaces.
+   * @static
+   * @memberOf XmlUtil
+   * @param  {object} dom     A dom object created by the xmldom module
+   * @param  {string} xpath   An xpath expression
+   * @return {array}          An array of matching dom nodes.
+   */
+  xpathSelect :  function (dom, xpath) {
+    return select(dom, expandQNames(xpath));
+  },
+
+  /**
+   * Given a dom node serializes all immediate children that are xml elements.
+   * @static
+   * @memberOf XmlUtil
+   * @param  {object} node  An xml dom node.
+   * @return {string}       Serialized xml.
+   */
+  serializeNodeChildren : function(node) {
+    var doc = '';
+    var sibling = node.firstChild;
+    var serializer = new XMLSerializer();
+
+    while (sibling) {
+      if (this.isElementNode(sibling)) {
+        doc += serializer.serializeToString(sibling);
+      }
+      sibling = sibling.nextSibling;
+    }
+
+    return doc !== '' ? doc : null;
+  },
+
+  /**
+   * Detects whether the passed in dom node represents an xml element.
+   * @static
+   * @memberOf XmlUtil
+   * @param  {object}  node   An xml dom node.
+   * @return {Boolean}        true if the node represents an element.
+   */
+  isElementNode : function(node) {
+    return _.has(node, 'tagName');
+  },
+
+  /**
+   * Given an xmldom node this function returns any text data contained within.
+   * @static
+   * @memberOf XmlUtil
+   * @param  {object} node  An xmldom node from which the data should be extracted.
+   * @return {string}       Any data found within the element or null if none is found.
+   */
+  findElementText : function(node) {
+    var sibling = node.firstChild;
+    while (sibling &amp;&amp; !sibling.data) {
+      sibling = sibling.nextSibling;
+    }
+
+    return sibling.data ? sibling.data : null;
+  }
+};
+
+module.exports = exports;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AuthenticationContext.html">AuthenticationContext</a></li><li><a href="AuthenticationParameters.html">AuthenticationParameters</a></li><li><a href="MemoryCache.html">MemoryCache</a></li><li><a href="TokenCache.html">TokenCache</a></li></ul><h3>Namespaces</h3><ul><li><a href="Logging.html">Logging</a></li></ul><h3>Global</h3><ul><li><a href="global.html#createAuthenticationContext">createAuthenticationContext</a></li><li><a href="global.html#createAuthenticationParametersFromHeader">createAuthenticationParametersFromHeader</a></li><li><a href="global.html#createAuthenticationParametersFromResponse">createAuthenticationParametersFromResponse</a></li><li><a href="global.html#createAuthenticationParametersFromUrl">createAuthenticationParametersFromUrl</a></li><li><a href="global.html#dateGetTimeInSeconds">dateGetTimeInSeconds</a></li><li><a href="global.html#SelfSignedJwt">SelfSignedJwt</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Wed Sep 28 2016 13:33:33 GMT-0700 (PDT)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

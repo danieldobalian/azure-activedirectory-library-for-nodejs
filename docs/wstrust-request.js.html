@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>wstrust-request.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AuthenticationContext.html">AuthenticationContext</a><ul class='methods'><li data-type='method'><a href="AuthenticationContext.html#_acquireToken">_acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireToken">acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithAuthorizationCode">acquireTokenWithAuthorizationCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCertificate">acquireTokenWithClientCertificate</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCredentials">acquireTokenWithClientCredentials</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithDeviceCode">acquireTokenWithDeviceCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithRefreshToken">acquireTokenWithRefreshToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithUsernamePassword">acquireTokenWithUsernamePassword</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireUserCode">acquireUserCode</a></li><li data-type='method'><a href="AuthenticationContext.html#cancelRequestToGetTokenWithDeviceCode">cancelRequestToGetTokenWithDeviceCode</a></li></ul></li><li><a href="AuthenticationParameters.html">AuthenticationParameters</a></li><li><a href="Authority.html">Authority</a><ul class='methods'><li data-type='method'><a href="Authority.html#_createInstanceDiscoveryEndpointFromTemplate">_createInstanceDiscoveryEndpointFromTemplate</a></li><li data-type='method'><a href="Authority.html#_getOAuthEndpoints">_getOAuthEndpoints</a></li><li data-type='method'><a href="Authority.html#_parseAuthority">_parseAuthority</a></li><li data-type='method'><a href="Authority.html#_performDynamicInstanceDiscovery">_performDynamicInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_performStaticInstanceDiscovery">_performStaticInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_validateAuthorityUrl">_validateAuthorityUrl</a></li><li data-type='method'><a href="Authority.html#_validateViaInstanceDiscovery">_validateViaInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#validate">validate</a></li></ul></li><li><a href="CacheDriver.html">CacheDriver</a><ul class='methods'><li data-type='method'><a href="CacheDriver.html#_acquireNewTokenFromMrrt">_acquireNewTokenFromMrrt</a></li><li data-type='method'><a href="CacheDriver.html#_addMany">_addMany</a></li><li data-type='method'><a href="CacheDriver.html#_createEntryFromRefresh">_createEntryFromRefresh</a></li><li data-type='method'><a href="CacheDriver.html#_entryHasMetadata">_entryHasMetadata</a></li><li data-type='method'><a href="CacheDriver.html#_find">_find</a></li><li data-type='method'><a href="CacheDriver.html#_findMRRTTokensForUser">_findMRRTTokensForUser</a></li><li data-type='method'><a href="CacheDriver.html#_getPotentialEntries">_getPotentialEntries</a></li><li data-type='method'><a href="CacheDriver.html#_loadSingleEntryFromCache">_loadSingleEntryFromCache</a></li><li data-type='method'><a href="CacheDriver.html#_refreshEntryIfNecessary">_refreshEntryIfNecessary</a></li><li data-type='method'><a href="CacheDriver.html#_refreshExpiredEntry">_refreshExpiredEntry</a></li><li data-type='method'><a href="CacheDriver.html#_removeMany">_removeMany</a></li><li data-type='method'><a href="CacheDriver.html#_updateRefreshTokens">_updateRefreshTokens</a></li><li data-type='method'><a href="CacheDriver.html#add">add</a></li><li data-type='method'><a href="CacheDriver.html#find">find</a></li><li data-type='method'><a href="CacheDriver.html#remove">remove</a></li></ul></li><li><a href="CodeRequest.html">CodeRequest</a><ul class='methods'><li data-type='method'><a href="CodeRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="CodeRequest.html#_getUserCodeInfo">_getUserCodeInfo</a></li><li data-type='method'><a href="CodeRequest.html#getUserCodeInfo">getUserCodeInfo</a></li></ul></li><li><a href="Logger.html">Logger</a><ul class='methods'><li data-type='method'><a href="Logger.html#createError">createError</a></li><li data-type='method'><a href="Logger.html#error">error</a></li><li data-type='method'><a href="Logger.html#info">info</a></li><li data-type='method'><a href="Logger.html#log">log</a></li><li data-type='method'><a href="Logger.html#verbose">verbose</a></li><li data-type='method'><a href="Logger.html#warn">warn</a></li></ul></li><li><a href="MemoryCache.html">MemoryCache</a><ul class='methods'><li data-type='method'><a href="MemoryCache.html#add">add</a></li><li data-type='method'><a href="MemoryCache.html#find">find</a></li><li data-type='method'><a href="MemoryCache.html#remove">remove</a></li></ul></li><li><a href="Mex.html">Mex</a><ul class='methods'><li data-type='method'><a href="Mex.html#_checkPolicy">_checkPolicy</a></li><li data-type='method'><a href="Mex.html#_checkSoapActionAndTransport">_checkSoapActionAndTransport</a></li><li data-type='method'><a href="Mex.html#_getMatchingBindings">_getMatchingBindings</a></li><li data-type='method'><a href="Mex.html#_getPortsForPolicyBindings">_getPortsForPolicyBindings</a></li><li data-type='method'><a href="Mex.html#_parse">_parse</a></li><li data-type='method'><a href="Mex.html#_selectSingleMatchingPolicy">_selectSingleMatchingPolicy</a></li><li data-type='method'><a href="Mex.html#_selectUsernamePasswordPolicies">_selectUsernamePasswordPolicies</a></li><li data-type='method'><a href="Mex.html#_urlIsSecure">_urlIsSecure</a></li><li data-type='method'><a href="Mex.html#discover">discover</a></li></ul></li><li><a href="OAuth2Client.html">OAuth2Client</a><ul class='methods'><li data-type='method'><a href="OAuth2Client.html#_crackJwt">_crackJwt</a></li><li data-type='method'><a href="OAuth2Client.html#_createDeviceCodeUrl">_createDeviceCodeUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_createTokenUrl">_createTokenUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_extractIdTokenValues">_extractIdTokenValues</a></li><li data-type='method'><a href="OAuth2Client.html#_getUserId">_getUserId</a></li><li data-type='method'><a href="OAuth2Client.html#_handleGetTokenResponse">_handleGetTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingRequestErrorResponse">_handlePollingRequestErrorResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingResponse">_handlePollingResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_parseIdToken">_parseIdToken</a></li><li data-type='method'><a href="OAuth2Client.html#_parseOptionalInts">_parseOptionalInts</a></li><li data-type='method'><a href="OAuth2Client.html#_validateDeviceCodeResponse">_validateDeviceCodeResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_validateTokenResponse">_validateTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#cancelPollingRequest">cancelPollingRequest</a></li><li data-type='method'><a href="OAuth2Client.html#getToken">getToken</a></li><li data-type='method'><a href="OAuth2Client.html#getTokenWithPolling">getTokenWithPolling</a></li></ul></li><li><a href="TokenCache.html">TokenCache</a></li><li><a href="TokenRequest.html">TokenRequest</a><ul class='methods'><li data-type='method'><a href="TokenRequest.html#_addTokenIntoCache">_addTokenIntoCache</a></li><li data-type='method'><a href="TokenRequest.html#_createADWSTrustEndpointError">_createADWSTrustEndpointError</a></li><li data-type='method'><a href="TokenRequest.html#_createJwt">_createJwt</a></li><li data-type='method'><a href="TokenRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="TokenRequest.html#_getSamlGrantType">_getSamlGrantType</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordFederated">_getTokenUsernamePasswordFederated</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordManaged">_getTokenUsernamePasswordManaged</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithRefreshToken">_getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithTokenResponse">_getTokenWithTokenResponse</a></li><li data-type='method'><a href="TokenRequest.html#_parseWStrustVersionFromFederationActiveAuthUrl">_parseWStrustVersionFromFederationActiveAuthUrl</a></li><li data-type='method'><a href="TokenRequest.html#_performUsernamePasswordForAccessTokenExchange">_performUsernamePasswordForAccessTokenExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustAssertionOAuthExchange">_performWSTrustAssertionOAuthExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustExchange">_performWSTrustExchange</a></li><li data-type='method'><a href="TokenRequest.html#getTokenFromCacheWithRefresh">getTokenFromCacheWithRefresh</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithAuthorizationCode">getTokenWithAuthorizationCode</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithCertificate">getTokenWithCertificate</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithClientCredentials">getTokenWithClientCredentials</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithRefreshToken">getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithUsernamePassword">getTokenWithUsernamePassword</a></li></ul></li><li><a href="UserRealm.html">UserRealm</a><ul class='methods'><li data-type='method'><a href="UserRealm.html#_getUserRealmUrl">_getUserRealmUrl</a></li><li data-type='method'><a href="UserRealm.html#_logParsedResponse">_logParsedResponse</a></li><li data-type='method'><a href="UserRealm.html#_parseDiscoveryResponse">_parseDiscoveryResponse</a></li><li data-type='method'><a href="UserRealm.html#_validateAccountType">_validateAccountType</a></li><li data-type='method'><a href="UserRealm.html#_validateConstantValue">_validateConstantValue</a></li><li data-type='method'><a href="UserRealm.html#_validateFederationProtocol">_validateFederationProtocol</a></li><li data-type='method'><a href="UserRealm.html#discover">discover</a></li></ul></li><li><a href="WSTrustRequest.html">WSTrustRequest</a><ul class='methods'><li data-type='method'><a href="WSTrustRequest.html#._datePlusMinutes">_datePlusMinutes</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildRST">_buildRST</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildSecurityHeader">_buildSecurityHeader</a></li><li data-type='method'><a href="WSTrustRequest.html#_handleRSTR">_handleRSTR</a></li><li data-type='method'><a href="WSTrustRequest.html#_populatedEscapedPassword">_populatedEscapedPassword</a></li><li data-type='method'><a href="WSTrustRequest.html#_populateRSTUsernamePassword">_populateRSTUsernamePassword</a></li><li data-type='method'><a href="WSTrustRequest.html#acquireToken">acquireToken</a></li></ul></li><li><a href="WSTrustResponse.html">WSTrustResponse</a><ul class='methods'><li data-type='method'><a href="WSTrustResponse.html#_parseError">_parseError</a></li><li data-type='method'><a href="WSTrustResponse.html#_parseToken">_parseToken</a></li><li data-type='method'><a href="WSTrustResponse.html#parse">parse</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Logging.html">Logging</a><ul class='methods'><li data-type='method'><a href="Logging.html#.getLoggingOptions">getLoggingOptions</a></li><li data-type='method'><a href="Logging.html#.setLoggingOptions">setLoggingOptions</a></li></ul></li><li><a href="Util.html">Util</a><ul class='methods'><li data-type='method'><a href="Util.html#.copyUrl">copyUrl</a></li><li data-type='method'><a href="Util.html#.createRequestHandler">createRequestHandler</a></li><li data-type='method'><a href="Util.html#.createRequestOptions">createRequestOptions</a></li><li data-type='method'><a href="Util.html#.isHttpSuccess">isHttpSuccess</a></li></ul></li><li><a href="XmlUtil.html">XmlUtil</a><ul class='methods'><li data-type='method'><a href="XmlUtil.html#.expandQNames">expandQNames</a></li><li data-type='method'><a href="XmlUtil.html#.findElementText">findElementText</a></li><li data-type='method'><a href="XmlUtil.html#.isElementNode">isElementNode</a></li><li data-type='method'><a href="XmlUtil.html#.serializeNodeChildren">serializeNodeChildren</a></li><li data-type='method'><a href="XmlUtil.html#.xpathSelect">xpathSelect</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addParameterIfAvailable">_addParameterIfAvailable</a></li><li><a href="global.html#createAuthenticationContext">createAuthenticationContext</a></li><li><a href="global.html#createAuthenticationParametersFromHeader">createAuthenticationParametersFromHeader</a></li><li><a href="global.html#createAuthenticationParametersFromResponse">createAuthenticationParametersFromResponse</a></li><li><a href="global.html#createAuthenticationParametersFromUrl">createAuthenticationParametersFromUrl</a></li><li><a href="global.html#createLogContext">createLogContext</a></li><li><a href="global.html#dateGetTimeInSeconds">dateGetTimeInSeconds</a></li><li><a href="global.html#scrubRSTRLogMessage">scrubRSTRLogMessage</a></li><li><a href="global.html#SelfSignedJwt">SelfSignedJwt</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">wstrust-request.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * @copyright
+ * Copyright © Microsoft Open Technologies, Inc.
+ *
+ * All Rights Reserved
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http: *www.apache.org/licenses/LICENSE-2.0
+ *
+ * THIS CODE IS PROVIDED *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ * ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A
+ * PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.
+ *
+ * See the Apache License, Version 2.0 for the specific language
+ * governing permissions and limitations under the License.
+ */
+'use strict';
+
+var request = require('request');
+var uuid = require('node-uuid');
+
+var Logger = require('./log').Logger;
+var util = require('./util');
+var WSTrustResponse = require('./wstrust-response');
+var WSTrustVersion = require('./constants').WSTrustVersion;
+
+var USERNAME_PLACEHOLDER = '{UsernamePlaceHolder}';
+var PASSWORD_PLACEHOLDER = '{PasswordPlaceHolder}';
+
+/**
+ * Creates a new instance of WSTrustRequest
+ * @constructor
+ * @private
+ * @param {object} callContext Contains any context information that applies to the request.
+ * @param {string}     wstrustEndpointUrl    An STS WS-Trust soap endpoint.
+ * @param {string}     appliesTo             A URI that identifies a service for which the a token is to be obtained.
+ */
+function WSTrustRequest(callContext, wstrustEndpointUrl, appliesTo, wstrustEndpointVersion) {
+  this._log = new Logger('WSTrustRequest', callContext._logContext);
+  this._callContext = callContext;
+  this._wstrustEndpointUrl = wstrustEndpointUrl;
+  this._appliesTo = appliesTo;
+  this._wstrustEndpointVersion = wstrustEndpointVersion;
+}
+
+/**
+* Given a Date object adds the minutes parameter and returns a new Date object.
+* @private
+* @static
+* @memberOf WSTrustRequest
+* @param {Date}     date      A Date object.
+* @param {Number}   minutes   The number of minutes to add to the date parameter.
+* @returns {Date}             Returns a Date object.
+*/
+function _datePlusMinutes(date, minutes) {
+  var minutesInMilliSeconds = minutes * 60 * 1000;
+  var epochTime = date.getTime() + minutesInMilliSeconds;
+  return new Date(epochTime);
+}
+
+/**
+ * Builds the soap security header for the RST message.
+ * @private
+ * @param {string}   username  A username
+ * @param {string}   password  The passowrd that corresponds to the username parameter.
+ * @returns {string}           A string that contains the soap security header.
+ */
+WSTrustRequest.prototype._buildSecurityHeader = function() {
+  var timeNow = new Date();
+  var expireTime = _datePlusMinutes(timeNow, 10);
+  var timeNowString = timeNow.toISOString();
+  var expireTimeString = expireTime.toISOString();
+
+  var securityHeaderXml = 
+    '&lt;wsse:Security s:mustUnderstand=\'1\' xmlns:wsse=\'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\'>\
+    &lt;wsu:Timestamp wsu:Id=\'_0\'>\
+      &lt;wsu:Created>' + timeNowString + '&lt;/wsu:Created>\
+      &lt;wsu:Expires>' + expireTimeString + '&lt;/wsu:Expires>\
+    &lt;/wsu:Timestamp>\
+    &lt;wsse:UsernameToken wsu:Id=\'ADALUsernameToken\'>\
+      &lt;wsse:Username>' + USERNAME_PLACEHOLDER + '&lt;/wsse:Username>\
+      &lt;wsse:Password>' + PASSWORD_PLACEHOLDER + '&lt;/wsse:Password>\
+    &lt;/wsse:UsernameToken>\
+    &lt;/wsse:Security>';
+
+  return securityHeaderXml;
+};
+
+/**
+ * Replaces the placeholders in the RST template with the actual username and password values.
+ * @private
+ * @param {string}   RSTTemplate  An RST with placeholders for username and password.
+ * @param {string}   username     A username
+ * @param {string}   password     The passowrd that corresponds to the username parameter.
+ * @returns {string}              A string containing a complete RST soap message.
+ */
+
+WSTrustRequest.prototype._populateRSTUsernamePassword = function(RSTTemplate, username, password) {
+  var RST = RSTTemplate.replace(USERNAME_PLACEHOLDER, username).replace(PASSWORD_PLACEHOLDER, this._populatedEscapedPassword(password));
+  return RST;
+};
+
+/**
+ * Escape xml characters in password. 
+ * @private
+ * @param {string} password The password to be excaped with xml charaters. 
+ */
+WSTrustRequest.prototype._populatedEscapedPassword = function (password) { 
+    var escapedPassword = password;
+    return escapedPassword.replace(/&amp;/g, '&amp;amp;')
+            .replace(/"/g, '&amp;quot;')
+            .replace(/'/g, '&amp;apos;')
+            .replace(/&lt;/g, '&amp;lt;')
+            .replace(/>/g, '&amp;gt;');
+}
+
+/**
+ * Builds a WS-Trust RequestSecurityToken (RST) message using username password authentication.
+ * @private
+ * @param {string}   username  A username
+ * @param {string}   password  The passowrd that corresponds to the username parameter.
+ * @returns {string}           A string containing a complete RST soap message.
+ */
+WSTrustRequest.prototype._buildRST = function(username, password) {
+  var messageID = uuid.v4();
+
+  // Create a template RST with placeholders for the username and password so the
+  // the RST can be logged without the sensitive information.
+  var schemaLocation = 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd';
+  var soapAction = 'http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue';
+  var rstTrustNamespace = 'http://docs.oasis-open.org/ws-sx/ws-trust/200512';
+  var keyType = 'http://docs.oasis-open.org/ws-sx/ws-trust/200512/Bearer';
+  var requestType = 'http://docs.oasis-open.org/ws-sx/ws-trust/200512/Issue';
+
+  if (this._wstrustEndpointVersion === WSTrustVersion.WSTRUST2005) {
+    soapAction = 'http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue';
+    rstTrustNamespace = 'http://schemas.xmlsoap.org/ws/2005/02/trust';
+    keyType = 'http://schemas.xmlsoap.org/ws/2005/05/identity/NoProofKey';
+    requestType = 'http://schemas.xmlsoap.org/ws/2005/02/trust/Issue';  
+  }
+
+  var RSTTemplate =
+    '&lt;s:Envelope xmlns:s=\'http://www.w3.org/2003/05/soap-envelope\' xmlns:wsa=\'http://www.w3.org/2005/08/addressing\' xmlns:wsu=\'' + schemaLocation + '\'>\
+      &lt;s:Header>\
+        &lt;wsa:Action s:mustUnderstand=\'1\'>' + soapAction + '&lt;/wsa:Action>\
+        &lt;wsa:messageID>urn:uuid:' + messageID + '&lt;/wsa:messageID>\
+        &lt;wsa:ReplyTo>\
+          &lt;wsa:Address>http://www.w3.org/2005/08/addressing/anonymous&lt;/wsa:Address>\
+        &lt;/wsa:ReplyTo>\
+        &lt;wsa:To s:mustUnderstand=\'1\'>' + this._wstrustEndpointUrl + '&lt;/wsa:To>\
+        ' + this._buildSecurityHeader() + '\
+      &lt;/s:Header>\
+      &lt;s:Body>\
+        &lt;wst:RequestSecurityToken xmlns:wst=\'' + rstTrustNamespace + '\'>\
+          &lt;wsp:AppliesTo xmlns:wsp=\'http://schemas.xmlsoap.org/ws/2004/09/policy\'>\
+            &lt;wsa:EndpointReference>\
+              &lt;wsa:Address>' + this._appliesTo + '&lt;/wsa:Address>\
+            &lt;/wsa:EndpointReference>\
+          &lt;/wsp:AppliesTo>\
+          &lt;wst:KeyType>' + keyType + '&lt;/wst:KeyType>\
+          &lt;wst:RequestType>' + requestType + '&lt;/wst:RequestType>\
+        &lt;/wst:RequestSecurityToken>\
+      &lt;/s:Body>\
+    &lt;/s:Envelope>';
+
+  this._log.verbose('Created RST: \n' + RSTTemplate);
+
+  var RST = this._populateRSTUsernamePassword(RSTTemplate, username, password);
+  return RST;
+};
+
+/**
+ * Handles the processing of a RSTR
+ * @private
+ * @param  {string}   body
+ * @param  {WSTrustRequest.AcquireTokenCallback} callback
+ */
+WSTrustRequest.prototype._handleRSTR = function(body, callback) {
+  var err;
+
+  var wstrustResponse = new WSTrustResponse(this._callContext, body, this._wstrustEndpointVersion);
+  try {
+    wstrustResponse.parse();
+  } catch (error) {
+    err = error;
+  }
+
+  callback(err, wstrustResponse);
+};
+
+/**
+ * Performs a WS-Trust RequestSecurityToken request to obtain a federated token in exchange for a username password.
+ * @param {string}   username  A username
+ * @param {string}   password  The passowrd that corresponds to the username parameter.
+ * @param {WSTrustRequest.AcquireTokenCallback} callback   Called once the federated token has been retrieved or on error.
+*/
+WSTrustRequest.prototype.acquireToken = function(username, password, callback) {
+  if (this._wstrustEndpointVersion === WSTrustVersion.UNDEFINED) {
+    var err = this._log.createError('Unsupported wstrust endpoint version. Current support version is wstrust2005 or wstrust13.');
+    callback(err);
+    return; 
+  }
+
+  var self = this;
+  var RST = this._buildRST(username, password);
+
+  var soapAction = this._wstrustEndpointVersion === WSTrustVersion.WSTRUST2005 ? 'http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue' : 'http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue';
+
+  var options = util.createRequestOptions(
+    this,
+    {
+      headers : {
+        'Content-Type' : 'application/soap+xml; charset=utf-8',
+        'SOAPAction' : soapAction
+      },
+      body : RST
+    }
+  );
+
+  this._log.verbose('Sending RST to: ' + this._wstrustEndpointUrl);
+
+  request.post(this._wstrustEndpointUrl, options, util.createRequestHandler('WS-Trust RST', this._log, callback,
+    function(response, body) {
+      self._handleRSTR(body, callback);
+    }
+  ));
+};
+
+/**
+* @callback AcquireTokenCallback
+* @memberOf WSTrustRequest
+* @param {Error} err   Contains an error object if acquireToken fails.
+* @param {WSTrustResponse} A successful response to the RST.
+*/
+
+module.exports = WSTrustRequest;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Wed Sep 28 2016 13:28:10 GMT-0700 (PDT) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

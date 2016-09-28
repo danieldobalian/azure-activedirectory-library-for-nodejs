@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>user-realm.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AuthenticationContext.html">AuthenticationContext</a><ul class='methods'><li data-type='method'><a href="AuthenticationContext.html#_acquireToken">_acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireToken">acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithAuthorizationCode">acquireTokenWithAuthorizationCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCertificate">acquireTokenWithClientCertificate</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCredentials">acquireTokenWithClientCredentials</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithDeviceCode">acquireTokenWithDeviceCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithRefreshToken">acquireTokenWithRefreshToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithUsernamePassword">acquireTokenWithUsernamePassword</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireUserCode">acquireUserCode</a></li><li data-type='method'><a href="AuthenticationContext.html#cancelRequestToGetTokenWithDeviceCode">cancelRequestToGetTokenWithDeviceCode</a></li></ul></li><li><a href="AuthenticationParameters.html">AuthenticationParameters</a></li><li><a href="Authority.html">Authority</a><ul class='methods'><li data-type='method'><a href="Authority.html#_createInstanceDiscoveryEndpointFromTemplate">_createInstanceDiscoveryEndpointFromTemplate</a></li><li data-type='method'><a href="Authority.html#_getOAuthEndpoints">_getOAuthEndpoints</a></li><li data-type='method'><a href="Authority.html#_parseAuthority">_parseAuthority</a></li><li data-type='method'><a href="Authority.html#_performDynamicInstanceDiscovery">_performDynamicInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_performStaticInstanceDiscovery">_performStaticInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_validateAuthorityUrl">_validateAuthorityUrl</a></li><li data-type='method'><a href="Authority.html#_validateViaInstanceDiscovery">_validateViaInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#validate">validate</a></li></ul></li><li><a href="CacheDriver.html">CacheDriver</a><ul class='methods'><li data-type='method'><a href="CacheDriver.html#_acquireNewTokenFromMrrt">_acquireNewTokenFromMrrt</a></li><li data-type='method'><a href="CacheDriver.html#_addMany">_addMany</a></li><li data-type='method'><a href="CacheDriver.html#_createEntryFromRefresh">_createEntryFromRefresh</a></li><li data-type='method'><a href="CacheDriver.html#_entryHasMetadata">_entryHasMetadata</a></li><li data-type='method'><a href="CacheDriver.html#_find">_find</a></li><li data-type='method'><a href="CacheDriver.html#_findMRRTTokensForUser">_findMRRTTokensForUser</a></li><li data-type='method'><a href="CacheDriver.html#_getPotentialEntries">_getPotentialEntries</a></li><li data-type='method'><a href="CacheDriver.html#_loadSingleEntryFromCache">_loadSingleEntryFromCache</a></li><li data-type='method'><a href="CacheDriver.html#_refreshEntryIfNecessary">_refreshEntryIfNecessary</a></li><li data-type='method'><a href="CacheDriver.html#_refreshExpiredEntry">_refreshExpiredEntry</a></li><li data-type='method'><a href="CacheDriver.html#_removeMany">_removeMany</a></li><li data-type='method'><a href="CacheDriver.html#_updateRefreshTokens">_updateRefreshTokens</a></li><li data-type='method'><a href="CacheDriver.html#add">add</a></li><li data-type='method'><a href="CacheDriver.html#find">find</a></li><li data-type='method'><a href="CacheDriver.html#remove">remove</a></li></ul></li><li><a href="CodeRequest.html">CodeRequest</a><ul class='methods'><li data-type='method'><a href="CodeRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="CodeRequest.html#_getUserCodeInfo">_getUserCodeInfo</a></li><li data-type='method'><a href="CodeRequest.html#getUserCodeInfo">getUserCodeInfo</a></li></ul></li><li><a href="Logger.html">Logger</a><ul class='methods'><li data-type='method'><a href="Logger.html#createError">createError</a></li><li data-type='method'><a href="Logger.html#error">error</a></li><li data-type='method'><a href="Logger.html#info">info</a></li><li data-type='method'><a href="Logger.html#log">log</a></li><li data-type='method'><a href="Logger.html#verbose">verbose</a></li><li data-type='method'><a href="Logger.html#warn">warn</a></li></ul></li><li><a href="MemoryCache.html">MemoryCache</a><ul class='methods'><li data-type='method'><a href="MemoryCache.html#add">add</a></li><li data-type='method'><a href="MemoryCache.html#find">find</a></li><li data-type='method'><a href="MemoryCache.html#remove">remove</a></li></ul></li><li><a href="Mex.html">Mex</a><ul class='methods'><li data-type='method'><a href="Mex.html#_checkPolicy">_checkPolicy</a></li><li data-type='method'><a href="Mex.html#_checkSoapActionAndTransport">_checkSoapActionAndTransport</a></li><li data-type='method'><a href="Mex.html#_getMatchingBindings">_getMatchingBindings</a></li><li data-type='method'><a href="Mex.html#_getPortsForPolicyBindings">_getPortsForPolicyBindings</a></li><li data-type='method'><a href="Mex.html#_parse">_parse</a></li><li data-type='method'><a href="Mex.html#_selectSingleMatchingPolicy">_selectSingleMatchingPolicy</a></li><li data-type='method'><a href="Mex.html#_selectUsernamePasswordPolicies">_selectUsernamePasswordPolicies</a></li><li data-type='method'><a href="Mex.html#_urlIsSecure">_urlIsSecure</a></li><li data-type='method'><a href="Mex.html#discover">discover</a></li></ul></li><li><a href="OAuth2Client.html">OAuth2Client</a><ul class='methods'><li data-type='method'><a href="OAuth2Client.html#_crackJwt">_crackJwt</a></li><li data-type='method'><a href="OAuth2Client.html#_createDeviceCodeUrl">_createDeviceCodeUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_createTokenUrl">_createTokenUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_extractIdTokenValues">_extractIdTokenValues</a></li><li data-type='method'><a href="OAuth2Client.html#_getUserId">_getUserId</a></li><li data-type='method'><a href="OAuth2Client.html#_handleGetTokenResponse">_handleGetTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingRequestErrorResponse">_handlePollingRequestErrorResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingResponse">_handlePollingResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_parseIdToken">_parseIdToken</a></li><li data-type='method'><a href="OAuth2Client.html#_parseOptionalInts">_parseOptionalInts</a></li><li data-type='method'><a href="OAuth2Client.html#_validateDeviceCodeResponse">_validateDeviceCodeResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_validateTokenResponse">_validateTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#cancelPollingRequest">cancelPollingRequest</a></li><li data-type='method'><a href="OAuth2Client.html#getToken">getToken</a></li><li data-type='method'><a href="OAuth2Client.html#getTokenWithPolling">getTokenWithPolling</a></li></ul></li><li><a href="TokenCache.html">TokenCache</a></li><li><a href="TokenRequest.html">TokenRequest</a><ul class='methods'><li data-type='method'><a href="TokenRequest.html#_addTokenIntoCache">_addTokenIntoCache</a></li><li data-type='method'><a href="TokenRequest.html#_createADWSTrustEndpointError">_createADWSTrustEndpointError</a></li><li data-type='method'><a href="TokenRequest.html#_createJwt">_createJwt</a></li><li data-type='method'><a href="TokenRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="TokenRequest.html#_getSamlGrantType">_getSamlGrantType</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordFederated">_getTokenUsernamePasswordFederated</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordManaged">_getTokenUsernamePasswordManaged</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithRefreshToken">_getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithTokenResponse">_getTokenWithTokenResponse</a></li><li data-type='method'><a href="TokenRequest.html#_parseWStrustVersionFromFederationActiveAuthUrl">_parseWStrustVersionFromFederationActiveAuthUrl</a></li><li data-type='method'><a href="TokenRequest.html#_performUsernamePasswordForAccessTokenExchange">_performUsernamePasswordForAccessTokenExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustAssertionOAuthExchange">_performWSTrustAssertionOAuthExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustExchange">_performWSTrustExchange</a></li><li data-type='method'><a href="TokenRequest.html#getTokenFromCacheWithRefresh">getTokenFromCacheWithRefresh</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithAuthorizationCode">getTokenWithAuthorizationCode</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithCertificate">getTokenWithCertificate</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithClientCredentials">getTokenWithClientCredentials</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithRefreshToken">getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithUsernamePassword">getTokenWithUsernamePassword</a></li></ul></li><li><a href="UserRealm.html">UserRealm</a><ul class='methods'><li data-type='method'><a href="UserRealm.html#_getUserRealmUrl">_getUserRealmUrl</a></li><li data-type='method'><a href="UserRealm.html#_logParsedResponse">_logParsedResponse</a></li><li data-type='method'><a href="UserRealm.html#_parseDiscoveryResponse">_parseDiscoveryResponse</a></li><li data-type='method'><a href="UserRealm.html#_validateAccountType">_validateAccountType</a></li><li data-type='method'><a href="UserRealm.html#_validateConstantValue">_validateConstantValue</a></li><li data-type='method'><a href="UserRealm.html#_validateFederationProtocol">_validateFederationProtocol</a></li><li data-type='method'><a href="UserRealm.html#discover">discover</a></li></ul></li><li><a href="WSTrustRequest.html">WSTrustRequest</a><ul class='methods'><li data-type='method'><a href="WSTrustRequest.html#._datePlusMinutes">_datePlusMinutes</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildRST">_buildRST</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildSecurityHeader">_buildSecurityHeader</a></li><li data-type='method'><a href="WSTrustRequest.html#_handleRSTR">_handleRSTR</a></li><li data-type='method'><a href="WSTrustRequest.html#_populatedEscapedPassword">_populatedEscapedPassword</a></li><li data-type='method'><a href="WSTrustRequest.html#_populateRSTUsernamePassword">_populateRSTUsernamePassword</a></li><li data-type='method'><a href="WSTrustRequest.html#acquireToken">acquireToken</a></li></ul></li><li><a href="WSTrustResponse.html">WSTrustResponse</a><ul class='methods'><li data-type='method'><a href="WSTrustResponse.html#_parseError">_parseError</a></li><li data-type='method'><a href="WSTrustResponse.html#_parseToken">_parseToken</a></li><li data-type='method'><a href="WSTrustResponse.html#parse">parse</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Logging.html">Logging</a><ul class='methods'><li data-type='method'><a href="Logging.html#.getLoggingOptions">getLoggingOptions</a></li><li data-type='method'><a href="Logging.html#.setLoggingOptions">setLoggingOptions</a></li></ul></li><li><a href="Util.html">Util</a><ul class='methods'><li data-type='method'><a href="Util.html#.copyUrl">copyUrl</a></li><li data-type='method'><a href="Util.html#.createRequestHandler">createRequestHandler</a></li><li data-type='method'><a href="Util.html#.createRequestOptions">createRequestOptions</a></li><li data-type='method'><a href="Util.html#.isHttpSuccess">isHttpSuccess</a></li></ul></li><li><a href="XmlUtil.html">XmlUtil</a><ul class='methods'><li data-type='method'><a href="XmlUtil.html#.expandQNames">expandQNames</a></li><li data-type='method'><a href="XmlUtil.html#.findElementText">findElementText</a></li><li data-type='method'><a href="XmlUtil.html#.isElementNode">isElementNode</a></li><li data-type='method'><a href="XmlUtil.html#.serializeNodeChildren">serializeNodeChildren</a></li><li data-type='method'><a href="XmlUtil.html#.xpathSelect">xpathSelect</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addParameterIfAvailable">_addParameterIfAvailable</a></li><li><a href="global.html#createAuthenticationContext">createAuthenticationContext</a></li><li><a href="global.html#createAuthenticationParametersFromHeader">createAuthenticationParametersFromHeader</a></li><li><a href="global.html#createAuthenticationParametersFromResponse">createAuthenticationParametersFromResponse</a></li><li><a href="global.html#createAuthenticationParametersFromUrl">createAuthenticationParametersFromUrl</a></li><li><a href="global.html#createLogContext">createLogContext</a></li><li><a href="global.html#dateGetTimeInSeconds">dateGetTimeInSeconds</a></li><li><a href="global.html#scrubRSTRLogMessage">scrubRSTRLogMessage</a></li><li><a href="global.html#SelfSignedJwt">SelfSignedJwt</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">user-realm.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*
+ * @copyright
+ * Copyright © Microsoft Open Technologies, Inc.
+ *
+ * All Rights Reserved
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http: *www.apache.org/licenses/LICENSE-2.0
+ *
+ * THIS CODE IS PROVIDED *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS
+ * OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION
+ * ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A
+ * PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.
+ *
+ * See the Apache License, Version 2.0 for the specific language
+ * governing permissions and limitations under the License.
+ */
+'use strict';
+
+var querystring = require('querystring');
+var request = require('request');
+var _ = require('underscore');
+var url = require('url');
+
+var constants = require('./constants');
+var Logger = require('./log').Logger;
+var util = require('./util');
+
+var AccountType = constants.UserRealm.AccountType;
+var FederationProtocolType = constants.UserRealm.FederationProtocolType;
+
+var USER_REALM_PATH_TEMPLATE = 'common/UserRealm/&lt;user>';
+
+/**
+ * Create a new UserRealm object
+ * @private
+ * @constructor
+ * @param {object} callContext Contains any context information that applies to the request.
+ * @param {string} userPrinciple   The username for which a realm needs to be discovered.
+ * @param {string} authority       The string url of the authority that owns the userPrinciple.
+ */
+function UserRealm(callContext, userPrinciple, authority) {
+  this._log = new Logger('UserRealm', callContext._logContext);
+  this._callContext = callContext;
+  this._apiVersion = '1.0';
+  this._federationProtocol = null;
+  this._accountType = null;
+  this._federationMetadataUrl = null;
+  this._federationActiveAuthUrl = null;
+  this._userPrinciple = userPrinciple;
+  this._authority = authority;
+}
+
+/**
+* The API version requested by UserRealm.
+* @type {string}
+* @instance
+* @memberOf UserRealm
+* @name apiVersion
+*/
+Object.defineProperty(UserRealm.prototype, 'apiVersion', {
+  get : function() {
+    return this._apiVersion;
+  }
+});
+
+/**
+* The federation protocol used by the users realm.
+* @type {string}
+* @instance
+* @memberOf UserRealm
+* @name federationProtocol
+*/
+Object.defineProperty(UserRealm.prototype, 'federationProtocol', {
+  get : function() {
+    return this._federationProtocol;
+  }
+});
+
+/**
+* The Type of account.  Either managed or federated.
+* @type {string}
+* @instance
+* @memberOf UserRealm
+* @name accountType
+*/
+Object.defineProperty(UserRealm.prototype, 'accountType', {
+  get : function() {
+    return this._accountType;
+  }
+});
+
+/**
+* If this is a federated account then this property will contain the mex url.
+* @type {string}
+* @instance
+* @memberOf UserRealm
+* @name federationsMetadataUrl
+*/
+Object.defineProperty(UserRealm.prototype, 'federationMetadataUrl', {
+  get : function() {
+    return this._federationMetadataUrl;
+  }
+});
+
+/**
+* If the account is federated this will contain the authentication endpoint.
+* @type {string}
+* @instance
+* @memberOf UserRealm
+* @name federationActiveAuthUrl
+*/
+Object.defineProperty(UserRealm.prototype, 'federationActiveAuthUrl', {
+  get : function() {
+    return this._federationActiveAuthUrl;
+  }
+});
+
+/**
+* Given the authority url this method constructs a full user realm discovery url.
+* @private
+* @returns A full user realm discovery url including path and query string.
+*/
+UserRealm.prototype._getUserRealmUrl = function() {
+  var userRealmUrl = util.copyUrl(this._authority);
+  var urlEncodedUser = encodeURIComponent(this._userPrinciple);
+  userRealmUrl.pathname = USER_REALM_PATH_TEMPLATE.replace('&lt;user>', urlEncodedUser);
+
+  var userRealmQuery = {
+    'api-version' : this._apiVersion
+  };
+
+  userRealmUrl.search = querystring.stringify(userRealmQuery);
+
+  userRealmUrl = util.copyUrl(userRealmUrl);
+
+  return userRealmUrl;
+};
+
+/**
+* Given a constants object and a value, validates that the value is a key in the constants object.
+* @private
+* @param {object} constants   An object containing constant key value pairs.
+* @param {string}  value       A value to check against the constants
+* @param {bool}   caseSensitive  set to true if comparisons should be made as case sensitive.  Defaults to false.
+* @returns {bool|string}  If value passed in matches one of the constants then the return value is the matched constant.
+*                         If a non case sensitive match was done, then the value returned may be different than the value
+*                         passed in.  If there is no match then the method returns false.
+*/
+UserRealm.prototype._validateConstantValue = function(constants, value, caseSensitive) {
+  if (!value) {
+    return false;
+  }
+  if (!caseSensitive) {
+    value = value.toLowerCase();
+  }
+  return _.contains(_.values(constants), value) ? value : false;
+};
+
+/**
+* Checks whether an account type string is valid.
+* @private
+* @param {string} type  An account type string.
+* @returns {bool}
+*/
+UserRealm.prototype._validateAccountType = function(type) {
+  return this._validateConstantValue(AccountType, type);
+};
+
+/**
+* Checks whether a federation protocol string is valid.
+* @private
+* @param {string} protocol  A federation protocol string.
+* @returns {bool}
+*/
+UserRealm.prototype._validateFederationProtocol = function(protocol) {
+  return this._validateConstantValue(FederationProtocolType, protocol);
+};
+
+/**
+* Logs the values parsed as part of user realm discovery.
+* @private
+*/
+UserRealm.prototype._logParsedResponse = function() {
+  this._log.verbose('UserRealm response:');
+  this._log.verbose(' AccountType:             ' + this.accountType);
+  this._log.verbose(' FederationProtocol:      ' + this.federationProtocol);
+  this._log.verbose(' FederationMetatdataUrl:  ' + this.federationMetadataUrl);
+  this._log.verbose(' FederationActiveAuthUrl: ' + this.federationActiveAuthUrl);
+};
+
+/**
+* Parses the response from a user realm discovery request.
+* @private
+* @param {string} body    The body returned as part of the http user realm discovery request.
+* @param {UserRealm.DiscoverCallback} callback  Called when parsing is complete.
+*/
+UserRealm.prototype._parseDiscoveryResponse = function(body, callback) {
+  this._log.verbose('Discovery response:\n' + body);
+
+  var response;
+  try {
+    response = JSON.parse(body);
+  } catch (err) {
+    callback(this._log.createError('Parsing realm discovery respone JSON failed: ' + body));
+    return;
+  }
+
+  var accountType = this._validateAccountType(response['account_type']);
+  if (!accountType) {
+    callback(this._log.createError('Cannot parse account_type: ' + accountType));
+    return;
+  }
+
+  this._accountType = accountType;
+
+  if (this._accountType === AccountType.Federated) {
+    var protocol = this._validateFederationProtocol(response['federation_protocol']);
+
+    if (!protocol) {
+      callback(this._log.createError('Cannot parse federation protocol: ' + protocol));
+      return;
+    }
+
+    this._federationProtocol = protocol;
+    this._federationMetadataUrl = response['federation_metadata_url'];
+    this._federationActiveAuthUrl = response['federation_active_auth_url'];
+  }
+
+  this._logParsedResponse();
+  callback();
+};
+
+/**
+* @callback DiscoverCallback
+* @memberOf UserRealm
+* @param {Error} error   If an error occurs during discovery then this parameter will be used to return the error.
+*/
+
+/**
+* Performs user realm discovery and fills in the properties on this object.
+* @private
+* @param {UserRealm.DiscoverCallback} callback  Called when discovery is complete.
+*/
+UserRealm.prototype.discover = function(callback) {
+  var self = this;
+  var options = util.createRequestOptions(
+    this,
+    {
+      headers : {
+        Accept : 'application/json'
+      }
+    }
+  );
+
+  var userRealmUrl = this._getUserRealmUrl();
+  this._log.verbose('Performing user realm discovery at: ' + url.format(userRealmUrl));
+  request.get(userRealmUrl, options, util.createRequestHandler('User Realm Discovery', this._log, callback,
+    function(response, body) {
+      self._parseDiscoveryResponse(body, callback);
+    })
+  );
+};
+
+module.exports = UserRealm;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Wed Sep 28 2016 13:28:10 GMT-0700 (PDT) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

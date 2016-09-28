@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Util - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AuthenticationContext.html">AuthenticationContext</a><ul class='methods'><li data-type='method'><a href="AuthenticationContext.html#_acquireToken">_acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireToken">acquireToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithAuthorizationCode">acquireTokenWithAuthorizationCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCertificate">acquireTokenWithClientCertificate</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithClientCredentials">acquireTokenWithClientCredentials</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithDeviceCode">acquireTokenWithDeviceCode</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithRefreshToken">acquireTokenWithRefreshToken</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireTokenWithUsernamePassword">acquireTokenWithUsernamePassword</a></li><li data-type='method'><a href="AuthenticationContext.html#acquireUserCode">acquireUserCode</a></li><li data-type='method'><a href="AuthenticationContext.html#cancelRequestToGetTokenWithDeviceCode">cancelRequestToGetTokenWithDeviceCode</a></li></ul></li><li><a href="AuthenticationParameters.html">AuthenticationParameters</a></li><li><a href="Authority.html">Authority</a><ul class='methods'><li data-type='method'><a href="Authority.html#_createInstanceDiscoveryEndpointFromTemplate">_createInstanceDiscoveryEndpointFromTemplate</a></li><li data-type='method'><a href="Authority.html#_getOAuthEndpoints">_getOAuthEndpoints</a></li><li data-type='method'><a href="Authority.html#_parseAuthority">_parseAuthority</a></li><li data-type='method'><a href="Authority.html#_performDynamicInstanceDiscovery">_performDynamicInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_performStaticInstanceDiscovery">_performStaticInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#_validateAuthorityUrl">_validateAuthorityUrl</a></li><li data-type='method'><a href="Authority.html#_validateViaInstanceDiscovery">_validateViaInstanceDiscovery</a></li><li data-type='method'><a href="Authority.html#validate">validate</a></li></ul></li><li><a href="CacheDriver.html">CacheDriver</a><ul class='methods'><li data-type='method'><a href="CacheDriver.html#_acquireNewTokenFromMrrt">_acquireNewTokenFromMrrt</a></li><li data-type='method'><a href="CacheDriver.html#_addMany">_addMany</a></li><li data-type='method'><a href="CacheDriver.html#_createEntryFromRefresh">_createEntryFromRefresh</a></li><li data-type='method'><a href="CacheDriver.html#_entryHasMetadata">_entryHasMetadata</a></li><li data-type='method'><a href="CacheDriver.html#_find">_find</a></li><li data-type='method'><a href="CacheDriver.html#_findMRRTTokensForUser">_findMRRTTokensForUser</a></li><li data-type='method'><a href="CacheDriver.html#_getPotentialEntries">_getPotentialEntries</a></li><li data-type='method'><a href="CacheDriver.html#_loadSingleEntryFromCache">_loadSingleEntryFromCache</a></li><li data-type='method'><a href="CacheDriver.html#_refreshEntryIfNecessary">_refreshEntryIfNecessary</a></li><li data-type='method'><a href="CacheDriver.html#_refreshExpiredEntry">_refreshExpiredEntry</a></li><li data-type='method'><a href="CacheDriver.html#_removeMany">_removeMany</a></li><li data-type='method'><a href="CacheDriver.html#_updateRefreshTokens">_updateRefreshTokens</a></li><li data-type='method'><a href="CacheDriver.html#add">add</a></li><li data-type='method'><a href="CacheDriver.html#find">find</a></li><li data-type='method'><a href="CacheDriver.html#remove">remove</a></li></ul></li><li><a href="CodeRequest.html">CodeRequest</a><ul class='methods'><li data-type='method'><a href="CodeRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="CodeRequest.html#_getUserCodeInfo">_getUserCodeInfo</a></li><li data-type='method'><a href="CodeRequest.html#getUserCodeInfo">getUserCodeInfo</a></li></ul></li><li><a href="Logger.html">Logger</a><ul class='methods'><li data-type='method'><a href="Logger.html#createError">createError</a></li><li data-type='method'><a href="Logger.html#error">error</a></li><li data-type='method'><a href="Logger.html#info">info</a></li><li data-type='method'><a href="Logger.html#log">log</a></li><li data-type='method'><a href="Logger.html#verbose">verbose</a></li><li data-type='method'><a href="Logger.html#warn">warn</a></li></ul></li><li><a href="MemoryCache.html">MemoryCache</a><ul class='methods'><li data-type='method'><a href="MemoryCache.html#add">add</a></li><li data-type='method'><a href="MemoryCache.html#find">find</a></li><li data-type='method'><a href="MemoryCache.html#remove">remove</a></li></ul></li><li><a href="Mex.html">Mex</a><ul class='methods'><li data-type='method'><a href="Mex.html#_checkPolicy">_checkPolicy</a></li><li data-type='method'><a href="Mex.html#_checkSoapActionAndTransport">_checkSoapActionAndTransport</a></li><li data-type='method'><a href="Mex.html#_getMatchingBindings">_getMatchingBindings</a></li><li data-type='method'><a href="Mex.html#_getPortsForPolicyBindings">_getPortsForPolicyBindings</a></li><li data-type='method'><a href="Mex.html#_parse">_parse</a></li><li data-type='method'><a href="Mex.html#_selectSingleMatchingPolicy">_selectSingleMatchingPolicy</a></li><li data-type='method'><a href="Mex.html#_selectUsernamePasswordPolicies">_selectUsernamePasswordPolicies</a></li><li data-type='method'><a href="Mex.html#_urlIsSecure">_urlIsSecure</a></li><li data-type='method'><a href="Mex.html#discover">discover</a></li></ul></li><li><a href="OAuth2Client.html">OAuth2Client</a><ul class='methods'><li data-type='method'><a href="OAuth2Client.html#_crackJwt">_crackJwt</a></li><li data-type='method'><a href="OAuth2Client.html#_createDeviceCodeUrl">_createDeviceCodeUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_createTokenUrl">_createTokenUrl</a></li><li data-type='method'><a href="OAuth2Client.html#_extractIdTokenValues">_extractIdTokenValues</a></li><li data-type='method'><a href="OAuth2Client.html#_getUserId">_getUserId</a></li><li data-type='method'><a href="OAuth2Client.html#_handleGetTokenResponse">_handleGetTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingRequestErrorResponse">_handlePollingRequestErrorResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_handlePollingResponse">_handlePollingResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_parseIdToken">_parseIdToken</a></li><li data-type='method'><a href="OAuth2Client.html#_parseOptionalInts">_parseOptionalInts</a></li><li data-type='method'><a href="OAuth2Client.html#_validateDeviceCodeResponse">_validateDeviceCodeResponse</a></li><li data-type='method'><a href="OAuth2Client.html#_validateTokenResponse">_validateTokenResponse</a></li><li data-type='method'><a href="OAuth2Client.html#cancelPollingRequest">cancelPollingRequest</a></li><li data-type='method'><a href="OAuth2Client.html#getToken">getToken</a></li><li data-type='method'><a href="OAuth2Client.html#getTokenWithPolling">getTokenWithPolling</a></li></ul></li><li><a href="TokenCache.html">TokenCache</a></li><li><a href="TokenRequest.html">TokenRequest</a><ul class='methods'><li data-type='method'><a href="TokenRequest.html#_addTokenIntoCache">_addTokenIntoCache</a></li><li data-type='method'><a href="TokenRequest.html#_createADWSTrustEndpointError">_createADWSTrustEndpointError</a></li><li data-type='method'><a href="TokenRequest.html#_createJwt">_createJwt</a></li><li data-type='method'><a href="TokenRequest.html#_createOAuthParameters">_createOAuthParameters</a></li><li data-type='method'><a href="TokenRequest.html#_getSamlGrantType">_getSamlGrantType</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordFederated">_getTokenUsernamePasswordFederated</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenUsernamePasswordManaged">_getTokenUsernamePasswordManaged</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithRefreshToken">_getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#_getTokenWithTokenResponse">_getTokenWithTokenResponse</a></li><li data-type='method'><a href="TokenRequest.html#_parseWStrustVersionFromFederationActiveAuthUrl">_parseWStrustVersionFromFederationActiveAuthUrl</a></li><li data-type='method'><a href="TokenRequest.html#_performUsernamePasswordForAccessTokenExchange">_performUsernamePasswordForAccessTokenExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustAssertionOAuthExchange">_performWSTrustAssertionOAuthExchange</a></li><li data-type='method'><a href="TokenRequest.html#_performWSTrustExchange">_performWSTrustExchange</a></li><li data-type='method'><a href="TokenRequest.html#getTokenFromCacheWithRefresh">getTokenFromCacheWithRefresh</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithAuthorizationCode">getTokenWithAuthorizationCode</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithCertificate">getTokenWithCertificate</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithClientCredentials">getTokenWithClientCredentials</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithRefreshToken">getTokenWithRefreshToken</a></li><li data-type='method'><a href="TokenRequest.html#getTokenWithUsernamePassword">getTokenWithUsernamePassword</a></li></ul></li><li><a href="UserRealm.html">UserRealm</a><ul class='methods'><li data-type='method'><a href="UserRealm.html#_getUserRealmUrl">_getUserRealmUrl</a></li><li data-type='method'><a href="UserRealm.html#_logParsedResponse">_logParsedResponse</a></li><li data-type='method'><a href="UserRealm.html#_parseDiscoveryResponse">_parseDiscoveryResponse</a></li><li data-type='method'><a href="UserRealm.html#_validateAccountType">_validateAccountType</a></li><li data-type='method'><a href="UserRealm.html#_validateConstantValue">_validateConstantValue</a></li><li data-type='method'><a href="UserRealm.html#_validateFederationProtocol">_validateFederationProtocol</a></li><li data-type='method'><a href="UserRealm.html#discover">discover</a></li></ul></li><li><a href="WSTrustRequest.html">WSTrustRequest</a><ul class='methods'><li data-type='method'><a href="WSTrustRequest.html#._datePlusMinutes">_datePlusMinutes</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildRST">_buildRST</a></li><li data-type='method'><a href="WSTrustRequest.html#_buildSecurityHeader">_buildSecurityHeader</a></li><li data-type='method'><a href="WSTrustRequest.html#_handleRSTR">_handleRSTR</a></li><li data-type='method'><a href="WSTrustRequest.html#_populatedEscapedPassword">_populatedEscapedPassword</a></li><li data-type='method'><a href="WSTrustRequest.html#_populateRSTUsernamePassword">_populateRSTUsernamePassword</a></li><li data-type='method'><a href="WSTrustRequest.html#acquireToken">acquireToken</a></li></ul></li><li><a href="WSTrustResponse.html">WSTrustResponse</a><ul class='methods'><li data-type='method'><a href="WSTrustResponse.html#_parseError">_parseError</a></li><li data-type='method'><a href="WSTrustResponse.html#_parseToken">_parseToken</a></li><li data-type='method'><a href="WSTrustResponse.html#parse">parse</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="Logging.html">Logging</a><ul class='methods'><li data-type='method'><a href="Logging.html#.getLoggingOptions">getLoggingOptions</a></li><li data-type='method'><a href="Logging.html#.setLoggingOptions">setLoggingOptions</a></li></ul></li><li><a href="Util.html">Util</a><ul class='methods'><li data-type='method'><a href="Util.html#.copyUrl">copyUrl</a></li><li data-type='method'><a href="Util.html#.createRequestHandler">createRequestHandler</a></li><li data-type='method'><a href="Util.html#.createRequestOptions">createRequestOptions</a></li><li data-type='method'><a href="Util.html#.isHttpSuccess">isHttpSuccess</a></li></ul></li><li><a href="XmlUtil.html">XmlUtil</a><ul class='methods'><li data-type='method'><a href="XmlUtil.html#.expandQNames">expandQNames</a></li><li data-type='method'><a href="XmlUtil.html#.findElementText">findElementText</a></li><li data-type='method'><a href="XmlUtil.html#.isElementNode">isElementNode</a></li><li data-type='method'><a href="XmlUtil.html#.serializeNodeChildren">serializeNodeChildren</a></li><li data-type='method'><a href="XmlUtil.html#.xpathSelect">xpathSelect</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#_addParameterIfAvailable">_addParameterIfAvailable</a></li><li><a href="global.html#createAuthenticationContext">createAuthenticationContext</a></li><li><a href="global.html#createAuthenticationParametersFromHeader">createAuthenticationParametersFromHeader</a></li><li><a href="global.html#createAuthenticationParametersFromResponse">createAuthenticationParametersFromResponse</a></li><li><a href="global.html#createAuthenticationParametersFromUrl">createAuthenticationParametersFromUrl</a></li><li><a href="global.html#createLogContext">createLogContext</a></li><li><a href="global.html#dateGetTimeInSeconds">dateGetTimeInSeconds</a></li><li><a href="global.html#scrubRSTRLogMessage">scrubRSTRLogMessage</a></li><li><a href="global.html#SelfSignedJwt">SelfSignedJwt</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Util</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Util
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".copyUrl"><span class="type-signature">(static) </span>copyUrl<span class="signature">(urlSource)</span><span class="type-signature"> &rarr; {URL}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Deep copies a url object.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>urlSource</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">URL</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The source url object to copy.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line161">line 161</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A deep copy of sourceUrl.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">URL</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createRequestHandler"><span class="type-signature">(static) </span>createRequestHandler<span class="signature">(operationMessage, log, errorCallback, successCallback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Creates a function that can be used as the callback for http request operations.  This is meant
+to centralize error handling in one place.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>operationMessage</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A message to be prepended to logged error strings.  This should be something like 'Mex Request'
+                                  and summarize the purpose of the http request.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>log</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A Logger object being used by the calling component.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>errorCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Util.html#.CreateRequestHandlerErrorCallback">Util.CreateRequestHandlerErrorCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Called in the event of an error.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>successCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Util.html#.CreateRequestHandlerSuccessCallabck">Util.CreateRequestHandlerSuccessCallabck</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Called on successfull completion of the request.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line114">line 114</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createRequestOptions"><span class="type-signature">(static) </span>createRequestOptions<span class="signature">(options)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Central place for housing default request options.  This is a place holder
+for when SSL validation is implemented an all requests are subject to that
+policy.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A set of options that will be merged with teh default options
+                          These will override any default options.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line83">line 83</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Returns the merged options.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isHttpSuccess"><span class="type-signature">(static) </span>isHttpSuccess<span class="signature">(statusCode)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>statusCode</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+|
+
+<span class="param-type">int</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An HTTP status code.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line51">line 51</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+
+    
+
+    <h4 class="name" id=".CreateRequestHandlerErrorCallback"><span class="type-signature"></span>CreateRequestHandlerErrorCallback<span class="signature">(error)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Error</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An error object.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line141">line 141</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id=".CreateRequestHandlerSuccessCallabck"><span class="type-signature"></span>CreateRequestHandlerSuccessCallabck<span class="signature">(response, body)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>response</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The response object returned from request.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>body</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The body of the http response.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="util.js.html">util.js</a>, <a href="util.js.html#line147">line 147</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a> on Wed Sep 28 2016 13:28:10 GMT-0700 (PDT) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
